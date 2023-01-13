@@ -25,20 +25,36 @@ body {
     background: var(--white);
     transition: .3s;
     --text__color: var(--black);
+    --background : var(--white);
 }
 
 body.dark {
     background: var(--black);
     --text__color: var(--white);
+    --background : var(--black);
 }
 
 .app {
     width: 100%;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .app__main-home {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     padding: 0 2rem 0 0rem;
+}
+
+@keyframes slide-bottom {
+    0% {
+        transform: translateY(-40%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }

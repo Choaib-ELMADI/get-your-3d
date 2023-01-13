@@ -1,45 +1,100 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { AiFillHome, AiOutlineHome } from 'react-icons/ai';
+import { BiMenuAltRight } from 'react-icons/bi';
+import { AiOutlineCloseCircle } from 'react-icons/ai';
 
 import './Navbar.css';
+import { images } from '../../constants/index';
 
-const sections = ["Solidworks", "Catia", "AutoCad", "Drawings"];
+const sections = ["Solidworks", "Catia", "AutoCad", "Fusion-360"];
+const logos = [ 
+  images.solidworks, 
+  images.catia, 
+  images.fusion, 
+  images.autocad 
+]
 
 
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState(-1);
+  const [viewPhoneBar, setViewPhoneBar] = useState(false);
 
   return (
-    <div className='app__navbar'>
-      <Link
-        to="/"
-        onClick={ () => setActiveSection(-1) }
-        className={ 
-          activeSection === -1 ?
-          'app__navbar-section active' : 
-          'app__navbar-section'
+    <>
+      <div className='app__navbar'>     
+        <Link
+          to="/"
+          onClick={ () => setActiveSection(-1)}
+          className={ 
+            activeSection === -1 ?
+            'app__navbar-section active' : 
+            'app__navbar-section'
+          }
+        >
+          {
+            activeSection === -1 ?
+            <AiFillHome className='icon' /> :
+            <AiOutlineHome className='icon' />
+          }
+          <h3>Home</h3>
+        </Link>
+        {
+          sections.map((section, index) => (
+            <Link 
+              key={ section }
+              to="/Section"
+              onClick={ () => setActiveSection(index) }
+              className={ 
+                activeSection === index ?
+                'app__navbar-section active' : 
+                'app__navbar-section'
+              }
+            >
+              <img src={ logos[index] } alt="logo" />
+              <h4>{ section }</h4>
+            </Link>
+          ))
         }
-      >
-        Home
-      </Link>
+      </div>
       {
-        sections.map((section, index) => (
-          <Link 
-            key={ section }
-            to="/Section"
-            onClick={ () => setActiveSection(index) }
-            className={ 
-              activeSection === index ?
-              'app__navbar-section active' : 
-              'app__navbar-section'
-            }
-          >
-            { section }
-          </Link>
-        ))
+        viewPhoneBar ?
+        <AiOutlineCloseCircle 
+          className='open__phone-menu'
+          onClick={ () => setViewPhoneBar(!viewPhoneBar) }
+        /> :
+        <BiMenuAltRight 
+          className='open__phone-menu'
+          onClick={ () => setViewPhoneBar(!viewPhoneBar) }
+        />
       }
-    </div>
+      { 
+        viewPhoneBar &&
+        <div className="app__navbar-phone">
+        {
+          sections.map((section, index) => (
+            <Link 
+              key={ section }
+              to="/Section"
+              onClick={ () => {
+                setViewPhoneBar(false);
+                setActiveSection(index);
+              }}
+              className={ 
+                activeSection === index ?
+                'app__navbar-section active' : 
+                'app__navbar-section'
+              }
+            >
+              <img src={ logos[index] } alt="logo" />
+              <h4>{ section }</h4>
+            </Link>
+          ))
+        }
+        </div>
+      }
+    </>
   );
 }
 

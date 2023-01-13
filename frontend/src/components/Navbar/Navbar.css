@@ -1,17 +1,117 @@
 .app__navbar {
-    margin-top: 5rem;
+    margin-top: 2rem;
+    margin-left: .5rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    width: 22%;
+    max-width: max-content;
+    background: var(--dark__blue2);
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .app__navbar-section {
-    padding: .5rem;
+    padding: .5rem .75rem;
     text-decoration: none;
     transition: .3s;
-    border-right: 2px solid transparent;
+    display: flex;
+    gap: .75rem;
+    align-items: center;
 }
 
-.app__navbar-section.active {
-    border-right-color: var(--violet);
+.app__navbar-section img {
+    width: 35px;
+    height: 35px;
+    background: var(--white);
+    border-radius: 8px;
+}
+
+.app__navbar-section h4,
+.app__navbar-section h3 {
+    color: var(--white);
+}
+
+.app__navbar-section .icon {
+    width: 35px;
+    height: 35px;
+    background: var(--white);
+    border-radius: 8px;
+}
+
+body.dark .app__navbar-section .icon {
+    background: transparent;
+}
+
+@media screen and (width <= 1100px) {
+    .app__navbar {
+        border-radius: 15px;
+    }
+
+    .app__navbar .app__navbar-section h3,
+    .app__navbar .app__navbar-section h4 {
+        display: none;
+    }
+}
+
+@media screen and (width >= 1000px) {
+    .app__navbar-phone,
+    .open__phone-menu {
+        display: none;
+    }
+}
+
+@media screen and (width <= 1000px) {
+    .app__navbar {
+        display: none;
+    }
+
+    .open__phone-menu {
+        font-size: 35px;
+        position: fixed;
+        top: 1.25rem;
+        right: calc(65px + 2rem);
+        z-index: 66;
+    }
+
+    .app__navbar-phone {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--background);
+        z-index: 55;
+        animation: slide-bottom .3s linear;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        padding-left: 4rem;
+    }
+
+    .app__navbar-section {
+        gap: 2rem;
+    }
+
+    .app__navbar-phone .app__navbar-section h4 {
+        font-size: 30px;
+        color: var(--text__color);
+    }
+
+    .app__navbar-phone .app__navbar-section img {
+        background: var(--text__color);
+    }
+}
+
+@media screen and (width <= 650px) {
+    .open__phone-menu {
+        top: 1rem;
+    }
+}
+
+@media screen and (width <= 400px) {
+    .app__navbar-phone {
+        padding-left: 1rem;
+    }
 }
