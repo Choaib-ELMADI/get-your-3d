@@ -1,22 +1,36 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import './DarkMode.css';
 
 
 
 const DarkMode = () => {
-  return (
-    <div app__dark-light>
-        <label htmlFor="darkLight">
+    const handleToggled = () => {
+        document.body.classList.toggle('dark');
+        localStorage.setItem(
+            'dark',
+            document.body.className
+        );
+    };
+
+    useEffect(() => {
+        if (localStorage.getItem('dark')) {
+            document.body.classList.add('dark');
+        }
+    }, []);
+    
+
+    return (
+        <label>
             <input 
-                type="checkbox" 
-                name="darkLight" 
-                id="darkLight" 
+                type="checkbox"
+                onClick={ handleToggled }
             />
-            <div className='modeCircle' />
+            <span className='switch'>
+                <span className='handle'></span>
+            </span>
         </label>
-    </div>
-  );
+    );
 }
 
 export default DarkMode;
