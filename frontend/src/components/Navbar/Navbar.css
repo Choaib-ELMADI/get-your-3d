@@ -1,0 +1,17 @@
+.app__navbar {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.app__navbar-section {
+    padding: .5rem;
+    text-decoration: none;
+    transition: .3s;
+    border-right: 2px solid transparent;
+}
+
+.app__navbar-section.active {
+    border-right-color: var(--violet);
+}

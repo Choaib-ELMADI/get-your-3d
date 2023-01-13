@@ -13,3 +13,8 @@
     text-decoration: none;
     color: var(--text__color);
 }
+
+.app__header-home img {
+    width: 34px;
+    height: 34px;
+}
