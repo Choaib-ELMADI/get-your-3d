@@ -1,0 +1,6 @@
+.app__recent {
+    margin-top: 2rem;
+    width: 22%;
+    background: blue;
+    max-width: 250px;
+}

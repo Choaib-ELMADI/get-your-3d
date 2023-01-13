@@ -4,8 +4,10 @@
     --dark__blue1: #273477;
     --dark__blue2: #171B4E;
     --violet     : #923CFF;
+    --violet__1  : rgb(66,20,67);
     --white      : #E4E4E4;
     --black      : #343434;
+    --green__1   : rgb(95,252,161);
     --main__font : 'system-ui';
 }
 

@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
+
+import './Recent.css';
+
+
 
 const Recent = () => {
   return (
-    <div>Recent</div>
-  )
+    <div className='app__recent'>
+      Recent
+    </div>
+  );
 }
 
-export default Recent
+export default Recent;
