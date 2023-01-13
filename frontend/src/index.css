@@ -1,0 +1,16 @@
+:root {
+    --soft__blue1: #33B6FF;
+    --soft__blue2: #4A7DFE;
+    --dark__blue1: #273477;
+    --dark__blue2: #171B4E;
+    --violet     : #923CFF;
+    --white      : #E4E4E4;
+    --black      : #343434;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
