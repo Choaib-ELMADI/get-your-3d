@@ -51,10 +51,10 @@ body.dark {
 }
 
 @keyframes slide-bottom {
-    0% {
-        transform: translateY(-40%);
+    from {
+        transform: translateY(-100%);
     }
-    100% {
+    to {
         transform: translateY(0);
     }
 }
