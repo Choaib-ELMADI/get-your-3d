@@ -30,12 +30,14 @@ body {
     transition: .3s;
     --text__color: var(--black);
     --background : var(--white);
+    --blury      : rgba(255, 255, 255, 0.4);
 }
 
 body.dark {
     background: var(--black);
     --text__color: var(--white);
     --background : var(--black);
+    --blury      : rgba(0, 0, 0, 0.4);
 }
 
 .app {
@@ -48,7 +50,6 @@ body.dark {
 }
 
 .app__main-home {
-    background: red;
     position: relative;
     width: 100%;
     display: flex;
@@ -75,6 +76,6 @@ body.dark {
 
 @media screen and (width <= 550px) {
     .app__main-home {
-        padding: 4rem .25rem;
+        padding: 4rem 0;
     }
 }
