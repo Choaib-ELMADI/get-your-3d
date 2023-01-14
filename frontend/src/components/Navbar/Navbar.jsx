@@ -44,7 +44,7 @@ const Navbar = () => {
           sections.map((section, index) => (
             <Link 
               key={ section }
-              to="/Section"
+              to="/sections/[slug]"
               onClick={ () => setActiveSection(index) }
               className={ 
                 activeSection === index ?
@@ -76,7 +76,7 @@ const Navbar = () => {
           sections.map((section, index) => (
             <Link 
               key={ section }
-              to="/Section"
+              to="/Sections/[slug]"
               onClick={ () => {
                 setViewPhoneBar(false);
                 setActiveSection(index);

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import { Header, Navbar, Home, Recent, Section, Footer } from './components/index';
+import { Header, Navbar, Home, Recent, Footer } from './components/index';
+import  SpecificSection from './sections/[slug]';
 
 
 
@@ -16,7 +17,7 @@ const App = () => {
 
         <Routes>
           <Route path="/" element={ <Home /> } />
-          <Route path="/Section" element={ <Section /> } />
+          <Route path="/sections/[slug]" element={ <SpecificSection /> } />
         </Routes>
         
         <Recent />
