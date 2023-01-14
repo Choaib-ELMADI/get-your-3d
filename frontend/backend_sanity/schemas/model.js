@@ -4,6 +4,16 @@ export default {
     type   : 'document',
     fields : [
         {
+            name   : 'name',
+            title  : 'Name',
+            type   : 'string',
+        },
+        {
+            name   : 'software',
+            title  : 'Software (S/A/C/F)',
+            type   : 'string',
+        },
+        {
             name   : 'image',
             title  : 'Image',
             type   : 'array',
@@ -13,18 +23,9 @@ export default {
             }
         },
         {
-            name   : 'name',
-            title  : 'Name',
-            type   : 'string',
-        },
-        {
-            name   : 'slug',
-            title  : 'Slug',
-            type   : 'slug',
-            options: {
-                source: 'name',
-                maxLength: 90,
-            }
+            name   : 'file',
+            title  : 'File',
+            type   : 'file',
         },
         {
             name   : 'price',
@@ -37,9 +38,13 @@ export default {
             type   : 'string',
         },
         {
-            name   : 'file',
-            title  : 'File',
-            type   : 'file',
-        }
+            name   : 'slug',
+            title  : 'Slug',
+            type   : 'slug',
+            options: {
+                source: 'name',
+                maxLength: 90,
+            }
+        },
     ]
 }
