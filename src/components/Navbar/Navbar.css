@@ -68,7 +68,7 @@ body.dark .app__navbar-section .icon {
     .open__phone-menu {
         font-size: 35px;
         position: fixed;
-        top: 1.25rem;
+        top: .8rem;
         right: calc(65px + 2rem);
         z-index: 66;
     }
@@ -105,7 +105,7 @@ body.dark .app__navbar-section .icon {
 
 @media screen and (width <= 650px) {
     .open__phone-menu {
-        top: 1rem;
+        top: .5rem;
     }
 }
 
