@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
-import { client, urlFor } from '../../lib/client';
 
 import './Home.css';
 import { images } from '../../constants/index';
@@ -24,16 +22,6 @@ const test = [
 
 const Home = () => {
   const [suggestions, setSuggestions] = useState([]);
-
-  useEffect(() => {
-    const query = '*[_type == "model"]';
-    client.fetch(query)
-      .then((data) => {
-        setSuggestions(data);
-      })
-  }, [])
-  
-
 
   return (
     <div className='app__home'>
@@ -64,14 +52,14 @@ const Home = () => {
         <div className="app__home-suggestions">
           <div className='app__home-container'>
             {
-              suggestions.map((elt, index) => (
+              test.map((elt, index) => (
                 <Link 
                   to="/" 
                   key={ `suggestion-${ index }` } 
                   className='app__home-suggestion'
                 >
                   <div className='overlay' />
-                  <img src={ urlFor(elt.image[index]) } alt={ `suggestion-${ index }` } />
+                  <img src={ elt } alt={ `suggestion-${ index }` } />
                 </Link>
               ))
             }
