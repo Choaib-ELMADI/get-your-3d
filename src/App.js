@@ -17,7 +17,11 @@ const App = () => {
 
         <Routes>
           <Route path="/" element={ <Home /> } />
-          <Route path="/sections/[slug]" element={ <SpecificSection /> } />
+          {
+            ["Solidworks", "Catia", "AutoCad", "Fusion-360"].map((section, i) => (
+              <Route key={ i } path={ `/sections/${ section }` } element={ <SpecificSection /> } />
+            ))
+          }
         </Routes>
         
         <Recent />
