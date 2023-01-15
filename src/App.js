@@ -1,15 +1,13 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import { Header, Navbar, Home, Recent, Footer } from './components/index';
-import  SpecificSection from './sections/[slug]';
+import { Header, Navbar, Home, SpecificSection, Recent, Footer } from './components/index';
 
 
 
 const App = () => {
   return (
     <div className='app'>
-
       <Header />
 
       <div className='app__main-home'>
@@ -17,11 +15,7 @@ const App = () => {
 
         <Routes>
           <Route path="/" element={ <Home /> } />
-          {
-            ["Solidworks", "Catia", "AutoCad", "Fusion-360"].map((section, i) => (
-              <Route key={ i } path={ `/sections/${ section }` } element={ <SpecificSection /> } />
-            ))
-          }
+          <Route path="/sections/" element={ <SpecificSection /> } />
         </Routes>
         
         <Recent />

@@ -6,20 +6,27 @@ import { AiOutlineCloseCircle } from 'react-icons/ai';
 
 import './Navbar.css';
 import { images } from '../../constants/index';
+import { useStateContext } from '../../context/StateContext';
 
-const sections = ["Solidworks", "Catia", "AutoCad", "Fusion-360"];
+const sections = ["Solidworks", "Catia", "AutoCad", "Fusion"];
 const logos = [ 
   images.solidworks, 
   images.catia, 
   images.fusion, 
   images.autocad 
-]
+];
 
 
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState(-1);
   const [viewPhoneBar, setViewPhoneBar] = useState(false);
+  const { filtering } = useStateContext();
+
+  const handleClick = (index, section) => {
+      setActiveSection(index);
+      filtering(section);
+  };
 
   return (
     <>
@@ -44,8 +51,8 @@ const Navbar = () => {
           sections.map((section, index) => (
             <Link 
               key={ section }
-              to="/sections/[slug]"
-              onClick={ () => setActiveSection(index) }
+              to={ `/sections/` }
+              onClick={ () => handleClick(index, section) }
               className={ 
                 activeSection === index ?
                 'app__navbar-section active' : 
