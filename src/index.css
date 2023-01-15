@@ -50,13 +50,14 @@ body.dark {
 }
 
 .app__main-home {
+    padding-top: 8rem;
     position: relative;
     width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 2rem 2rem 2rem 0;
+    gap: 2rem;
+    align-items: flex-start;
     overflow-x: hidden;
 }
 

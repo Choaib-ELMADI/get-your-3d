@@ -71,6 +71,7 @@ body.dark .app__navbar-section .icon {
         top: .8rem;
         right: calc(65px + 2rem);
         z-index: 66;
+        cursor: pointer;
     }
 
     .app__navbar-phone {

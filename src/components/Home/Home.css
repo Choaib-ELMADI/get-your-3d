@@ -1,5 +1,5 @@
 .app__home {
-    padding-top: 5rem;
+    padding-top: 2rem;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -135,25 +135,25 @@
     }
 }
 
-@media screen and (width <= 700px) {    
+@media screen and (width <= 700px) { 
+    .app__home {
+        padding-top: 3rem;
+    }
+    
     .app__home-items {
         flex-wrap: wrap;
-    }
-
-    .app__home-item:nth-child(1) {
-        order: 1;
-    }
-
-    .app__home-item:nth-child(2) {
-        order: 3;
-    }
-
-    .app__home-item:nth-child(3) {
-        order: 2;
     }
 }
 
 @media screen and (width <= 565px) {
+    .app__home-item:nth-child(1) {
+        order: 1;
+    }
+    
+    .app__home-item:nth-child(3) {
+        order: 2;
+    }
+    
     .app__home-item:nth-child(1),
     .app__home-item:nth-child(3) {
         width: 140px;
@@ -161,8 +161,15 @@
     }
     
     .app__home-item:nth-child(2) {
+        order: 3;
         width: 240px;
         height: 280px;
+    }
+}
+
+@media screen and (width <= 550px) {
+    .app__home {
+        padding-top: 1rem;
     }
 }
 
