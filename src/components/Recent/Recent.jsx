@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { BsFillArrowLeftCircleFill } from 'react-icons/bs';
+import { GiEmptyWoodBucketHandle } from 'react-icons/gi';
 
 import './Recent.css';
 import { useStateContext } from '../../context/StateContext';
@@ -23,7 +24,10 @@ const Recent = () => {
         className={ viewHistory ? 'app__recent' : 'app__recent active' }
       >
         { history.length < 1 &&
-          <h3>There is no recent items</h3>
+          <div className='empty-recent'>
+            <GiEmptyWoodBucketHandle fontSize={ 50 } />
+            <h3>There is no recent items</h3>
+          </div>
         }
         {
           history.length >= 1 &&
