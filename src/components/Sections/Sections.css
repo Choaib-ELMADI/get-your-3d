@@ -33,9 +33,12 @@
 
 .app__specific-section-categories {
     width: 100%;
+}
+
+.cat-container {
     display: flex;
-    flex-wrap: wrap;
     gap: 1rem;
+    overflow: scroll;
 }
 
 .app__specific-section-categories button {

@@ -46,15 +46,19 @@ const SpecificSection = () => {
           <h1>No Specific Items</h1>
         }
         { filteredItems.length >= 1 &&
-          ["Solidworks", "Catia", "AutoCad", "Fusion"].map(cat => (
-            <button 
-              key={ cat }
-              className={ filteredItems[0].software === cat ? 'active' : '' }
-              onClick={ () => handleClicked(cat) }
-            >
-              { cat }
-            </button>
-          ))
+          <div className='cat-container'>
+            {
+            ["Solidworks", "Catia", "AutoCad", "Fusion"].map(cat => (
+              <button 
+                key={ cat }
+                className={ filteredItems[0].software === cat ? 'active' : '' }
+                onClick={ () => handleClicked(cat) }
+              >
+                { cat }
+              </button>
+            ))
+            }
+          </div>
         }
       </div>
       <motion.div
