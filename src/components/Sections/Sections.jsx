@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 // import { StlViewer } from "react-stl-viewer";
 
 import './Sections.css';
@@ -14,7 +15,17 @@ import { useStateContext } from '../../context/StateContext';
 
 
 const SpecificSection = () => {
+  const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
+
   const { filteredItems, filtering, setFilteredItems } = useStateContext();
+
+  const handleClicked = (x) => {
+    setAnimateCard([{ y: 100, opacity: 0 }]);
+    setTimeout(() => {
+      setAnimateCard([{ y: 0, opacity: 1 }]);
+      filtering(x);
+    }, 400);
+  };
 
   return (
     <div className='app__specific-section'>
@@ -22,33 +33,51 @@ const SpecificSection = () => {
         <h1>Categories</h1>
         <button
           onClick={ () => {
-            setFilteredItems(models);
+            setAnimateCard([{ y: 100, opacity: 0 }]);
+            setTimeout(() => {
+              setAnimateCard([{ y: 0, opacity: 1 }]);
+              setFilteredItems(models);
+            }, 400);
           }}
         >See All</button>
       </div>
       <div className="app__specific-section-categories">
-        {
+        { filteredItems.length < 1 &&
+          <h1>No Specific Items</h1>
+        }
+        { filteredItems.length >= 1 &&
           ["Solidworks", "Catia", "AutoCad", "Fusion"].map(cat => (
             <button 
+              key={ cat }
               className={ filteredItems[0].software === cat ? 'active' : '' }
-              onClick={ () => filtering(cat) }
+              onClick={ () => handleClicked(cat) }
             >
               { cat }
             </button>
           ))
         }
       </div>
-      <div className="app__models-container">
+      <motion.div
+        animate={ animateCard }
+        transition={ { duration: 0.5, delayChildren: 2 } }
+        className="app__models-container"
+      >
         {
           filteredItems.map((model, i) => (
-            <div key={ `model-${ i }` } className='model__container'>
+            <div 
+              key={ `model-${ i }` } 
+              className='model__container'
+            >
               <img src={ model.pictures[0] } alt={ `model-${ i }` } />
-              <h2>{ model.title }</h2>
+              <label>
+                <span>{ model.title }</span>
+                <Link>Download</Link>
+              </label>
               <p>{ model.description }</p>
-          </div>
+            </div>
           ))
         }
-      </div>
+      </motion.div>
     </div>
   );
 }

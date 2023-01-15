@@ -21,11 +21,12 @@ const logos = [
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState(-1);
   const [viewPhoneBar, setViewPhoneBar] = useState(false);
-  const { filtering } = useStateContext();
+  const { filtering, setAtHome } = useStateContext();
 
   const handleClick = (index, section) => {
       setActiveSection(index);
       filtering(section);
+      setAtHome(false);
   };
 
   return (
@@ -33,7 +34,10 @@ const Navbar = () => {
       <div className='app__navbar'>     
         <Link
           to="/"
-          onClick={ () => setActiveSection(-1)}
+          onClick={ () => {
+            setAtHome(true);
+            setActiveSection(-1); 
+          }}
           className={ 
             activeSection === -1 ?
             'app__navbar-section active' : 
@@ -83,8 +87,9 @@ const Navbar = () => {
           sections.map((section, index) => (
             <Link 
               key={ section }
-              to="/Sections/[slug]"
+              to='/Sections/'
               onClick={ () => {
+                handleClick(index, section)
                 setViewPhoneBar(false);
                 setActiveSection(index);
               }}

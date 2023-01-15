@@ -25,8 +25,36 @@
     height: 34px;
 }
 
-@media screen and (width <= 650px) {
+.app__header input {
+    background: var(--text__color);
+    color: var(--background);
+    padding: 6px 12px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 18px;
+    border: 0;
+    outline: none;
+    flex: .5;
+}
+
+.app__header input::placeholder {
+    color: var(--background);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+@media screen and (width <= 1000px) {
+    .app__header {
+        padding-right: 4rem;
+    }
+}
+
+@media screen and (width <= 700px) {
     .app__header-home h1 {
         display: none;
+    }
+
+    .app__header input {
+        flex: .8;
     }
 }

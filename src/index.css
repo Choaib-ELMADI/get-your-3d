@@ -70,14 +70,15 @@ body.dark {
     }
 }
 
-@media screen and (width <= 700px) {
+@media screen and (width <= 1000px) {
     .app__main-home {
-        padding: 2rem 0;
+        padding-left: 1rem;
     }
 }
 
-@media screen and (width <= 550px) {
+@media screen and (width <= 720px) {
     .app__main-home {
-        padding: 4rem 0;
+        padding-top: 6rem;
+        padding-right: 1rem;
     }
 }
