@@ -1,12 +1,25 @@
 .app__recent {
+    padding: .5rem;
     width: 22%;
     height: 60vh;
-    background: blue;
+    background: rgba(0, 0, 0, 0.9);
     max-width: 250px;
     min-width: 150px;
     overflow-y: scroll;
     margin-right: 1rem;
+    border-radius: 12px;
 }
+
+.empty-recent {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.empty-recent * {
+    color: var(--white);
+} 
 
 .app__recent-container {
     width: 100%;
@@ -18,6 +31,7 @@
 }
 
 .app__recent h3 {
+    margin-top: 2rem;
     text-align: center;
 }
 
@@ -31,6 +45,7 @@
 }
 
 .app__recent-item img {
+    border-radius: 10px;
     height: 40px;
     height: 40px;
     background: red;
@@ -56,7 +71,7 @@
         width: 80%;
         max-width: 300px;
         transition: .3s linear;
-        background: var(--blury__2);
+        /* background: var(--blury__2); */
         z-index: 50;
     }
 

@@ -58,3 +58,9 @@
         flex: .8;
     }
 }
+
+@media screen  and (width <= 420px) {
+    .app__header input {
+        display: none;
+    }
+}
