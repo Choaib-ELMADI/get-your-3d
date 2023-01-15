@@ -23,7 +23,23 @@ export const StateContext = ({ children }) => {
             word.toLowerCase().startsWith(query)
           )
         );
-    }
+    };
+
+    const updateHistory = (elt) => {
+        if (history.length < 1) setHistory([...history, elt]);
+        else {
+            history.map(h => {
+                if (elt.title !== h.title) setHistory([...history, elt]);
+                else {
+                    const exist = history.filter(h => h.title !== elt.title);
+                    setHistory([
+                        ...exist,
+                        elt
+                    ])
+                }
+            });
+        };
+    };
 
 
     return (
@@ -36,6 +52,7 @@ export const StateContext = ({ children }) => {
                 atHome,
                 setAtHome,
                 searching,
+                updateHistory,
             }}
         >
             { children }

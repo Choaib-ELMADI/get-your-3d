@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AiFillHome, AiOutlineHome } from 'react-icons/ai';
 import { BiMenuAltRight } from 'react-icons/bi';
-import { AiOutlineCloseCircle } from 'react-icons/ai';
+import { RiCloseCircleFill } from 'react-icons/ri';
 
 import './Navbar.css';
 import { images } from '../../constants/index';
@@ -71,7 +71,7 @@ const Navbar = () => {
       </div>
       {
         viewPhoneBar ?
-        <AiOutlineCloseCircle 
+        <RiCloseCircleFill
           className='open__phone-menu'
           onClick={ () => setViewPhoneBar(!viewPhoneBar) }
         /> :

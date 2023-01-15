@@ -100,7 +100,7 @@ body.dark .app__navbar-section .icon {
     }
 
     .app__navbar-phone .app__navbar-section img {
-        background: var(--text__color);
+        background: var(--green__1);
     }
 }
 

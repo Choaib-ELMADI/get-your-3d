@@ -88,9 +88,9 @@
 .app__home-suggestion {
     width: 80px;
     height: 80px;
-    background: var(--white);
+    background: var(--soft__blue1);
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 26px;
 }
 
 .app__home-suggestion img {

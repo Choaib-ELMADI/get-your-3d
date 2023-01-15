@@ -3,25 +3,13 @@ import { Link } from 'react-router-dom';
 
 import './Home.css';
 import { images } from '../../constants/index';
-const test = [
-  images.autocad, 
-  images.catia, 
-  images.fusion,
-  images.home__i1,
-  images.home__i2,
-  images.home__i3,
-  images.logo__dark,
-  images.logo__dark,
-  images.logo__dark,
-  images.logo__dark,
-  images.logo__light,
-  images.solidworks
-]
+import { models } from '../../data';
+import { useStateContext } from '../../context/StateContext';
 
 
 
 const Home = () => {
-  const [suggestions, setSuggestions] = useState([]);
+  const { updateHistory } = useStateContext();
 
   return (
     <div className='app__home'>
@@ -52,14 +40,15 @@ const Home = () => {
         <div className="app__home-suggestions">
           <div className='app__home-container'>
             {
-              test.map((elt, index) => (
+              models.map((elt, index) => (
                 <Link 
-                  to="/" 
+                  to={ `${ elt.title }` } 
                   key={ `suggestion-${ index }` } 
                   className='app__home-suggestion'
+                  onClick={ () => updateHistory(elt) }
                 >
                   <div className='overlay' />
-                  <img src={ elt } alt={ `suggestion-${ index }` } />
+                  <img src={ elt.pictures[0] } alt={ `suggestion-${ index }` } />
                 </Link>
               ))
             }

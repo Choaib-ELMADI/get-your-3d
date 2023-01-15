@@ -31,6 +31,7 @@ body {
     --text__color: var(--black);
     --background : var(--white);
     --blury      : rgba(255, 255, 255, 0.4);
+    --blury__2   : rgba(255, 255, 255, 0.9);
 }
 
 body.dark {
@@ -38,6 +39,7 @@ body.dark {
     --text__color: var(--white);
     --background : var(--black);
     --blury      : rgba(0, 0, 0, 0.4);
+    --blury__2   : rgba(0, 0, 0, 0.9);
 }
 
 .app {
