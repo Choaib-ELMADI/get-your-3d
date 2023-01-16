@@ -24,6 +24,8 @@ import solidworks__2 from '../assets/solidworks__2.png';
 import solidworks__3 from '../assets/solidworks__3.png';
 import solidworks__4 from '../assets/solidworks__4.png';
 
+import not__found    from '../assets/not__found.png';
+
 
 export default {
     logo__dark,
@@ -51,5 +53,7 @@ export default {
     solidworks__2,
     solidworks__3,
     solidworks__4,
+
+    not__found,
 
 }

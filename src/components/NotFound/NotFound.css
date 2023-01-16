@@ -1,0 +1,42 @@
+.app__not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app__not-found h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.app__not-found img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.link:hover {
+    animation: hue 1s infinite linear;
+}
+
+.link {
+    text-decoration: none;
+    background-image: linear-gradient(92deg, #f35626, #feab3a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes hue {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@media screen and (width <= 720px) {
+    .app__not-found {
+        margin: auto;
+    }
+}

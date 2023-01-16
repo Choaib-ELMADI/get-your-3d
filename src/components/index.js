@@ -12,3 +12,5 @@ export { default as SpecificSection } from './Sections/Sections';
 export { default as Model           } from './Model/Model';
 
 export { default as Footer          } from './Footer/Footer';
+
+export { default as NotFound        } from './NotFound/NotFound';
