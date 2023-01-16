@@ -5,7 +5,7 @@
     gap: 2rem;
     width: 22%;
     max-width: max-content;
-    background: var(--dark__blue2);
+    background: rgba(0, 0, 0, 0.9);
     overflow: hidden;
     border-radius: 10px;
 }
