@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { AiFillHome, AiOutlineHome } from 'react-icons/ai';
+import { AiFillHome } from 'react-icons/ai';
 import { BiMenuAltRight } from 'react-icons/bi';
 import { RiCloseCircleFill } from 'react-icons/ri';
 
@@ -19,12 +19,10 @@ const logos = [
 
 
 const Navbar = () => {
-  const [activeSection, setActiveSection] = useState(-1);
   const [viewPhoneBar, setViewPhoneBar] = useState(false);
   const { filtering, setAtHome } = useStateContext();
 
-  const handleClick = (index, section) => {
-      setActiveSection(index);
+  const handleClick = (section) => {
       filtering(section);
       setAtHome(false);
   };
@@ -35,20 +33,11 @@ const Navbar = () => {
         <Link
           to="/"
           onClick={ () => {
-            setAtHome(true);
-            setActiveSection(-1); 
+            setAtHome(true); 
           }}
-          className={ 
-            activeSection === -1 ?
-            'app__navbar-section active' : 
-            'app__navbar-section'
-          }
+          className="app__navbar-section"
         >
-          {
-            activeSection === -1 ?
-            <AiFillHome className='icon' /> :
-            <AiOutlineHome className='icon' />
-          }
+          <AiFillHome className='icon' />
           <h3>Home</h3>
         </Link>
         {
@@ -56,12 +45,8 @@ const Navbar = () => {
             <Link 
               key={ section }
               to={ `/sections/` }
-              onClick={ () => handleClick(index, section) }
-              className={ 
-                activeSection === index ?
-                'app__navbar-section active' : 
-                'app__navbar-section'
-              }
+              onClick={ () => handleClick(section) }
+              className="app__navbar-section"
             >
               <img src={ logos[index] } alt="logo" />
               <h4>{ section }</h4>
@@ -89,15 +74,10 @@ const Navbar = () => {
               key={ section }
               to='/Sections/'
               onClick={ () => {
-                handleClick(index, section)
+                handleClick(section)
                 setViewPhoneBar(false);
-                setActiveSection(index);
               }}
-              className={ 
-                activeSection === index ?
-                'app__navbar-section active' : 
-                'app__navbar-section'
-              }
+              className="app__navbar-section"
             >
               <img src={ logos[index] } alt="logo" />
               <h4>{ section }</h4>
