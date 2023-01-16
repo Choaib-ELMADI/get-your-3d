@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { BsFillArrowLeftCircleFill } from 'react-icons/bs';
 import { GiEmptyWoodBucketHandle } from 'react-icons/gi';
 import { BiHide } from 'react-icons/bi';
@@ -36,18 +37,20 @@ const Recent = () => {
             <h2>Recent</h2>
             {
               history.map((h, i) => (
-                <div className='app__recent-item' key={ i }>
+                <Link 
+                  to={ `/models/${ h.title }` } 
+                  className='app__recent-item' 
+                  key={ i }
+                >
                   <img src={ h.pictures[0] } alt="history" />
                   <label>
                     <h4>{ h.title }</h4>
                     <p>{ h.description }</p>
                   </label>
-                  <button
-                    onClick={ () => hide(h) }
-                  >
+                  <button onClick={ () => hide(h) } >
                     <BiHide className='hide-icon' fontSize={ 24 } />
                   </button>
-                </div>
+                </Link>
               ))
             }
           </div>

@@ -17,7 +17,7 @@ import { useStateContext } from '../../context/StateContext';
 const SpecificSection = () => {
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
-  const { filteredItems, filtering, setFilteredItems } = useStateContext();
+  const { filteredItems, filtering, setFilteredItems, updateHistory } = useStateContext();
 
   const handleClicked = (x) => {
     setAnimateCard([{ y: 100, opacity: 0 }]);
@@ -75,7 +75,7 @@ const SpecificSection = () => {
               <img src={ model.pictures[0] } alt={ `model-${ i }` } />
               <label>
                 <span>{ model.title }</span>
-                <Link>Download</Link>
+                <Link to={ `/models/${ model.title }` } onClick={ () => updateHistory(model) } >Details</Link>
               </label>
               <p>{ model.description }</p>
             </div>
