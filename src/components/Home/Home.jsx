@@ -42,7 +42,7 @@ const Home = () => {
             {
               models.map((elt, index) => (
                 <Link 
-                  to={ `${ elt.title }` } 
+                  to={ `/models/${ elt.title }` } 
                   key={ `suggestion-${ index }` } 
                   className='app__home-suggestion'
                   onClick={ () => updateHistory(elt) }

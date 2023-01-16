@@ -9,4 +9,6 @@ export { default as Home            } from './Home/Home';
 
 export { default as SpecificSection } from './Sections/Sections';
 
+export { default as Model           } from './Model/Model';
+
 export { default as Footer          } from './Footer/Footer';
