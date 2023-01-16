@@ -26,6 +26,10 @@
     border-radius: 8px;
 }
 
+.home-section {
+    transition: background .3s;
+}
+
 .app__navbar-section h4,
 .app__navbar-section h3 {
     color: var(--white);

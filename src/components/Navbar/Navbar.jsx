@@ -35,7 +35,7 @@ const Navbar = () => {
           onClick={ () => {
             setAtHome(true); 
           }}
-          className="app__navbar-section"
+          className="app__navbar-section home-section"
         >
           <AiFillHome className='icon' />
           <h3>Home</h3>

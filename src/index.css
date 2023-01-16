@@ -20,7 +20,7 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    transition: color .3s, background .3s;
+    transition: color .3s;
     font-family: var(--main__font);
     color: var(--text__color);
 }
