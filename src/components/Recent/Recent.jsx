@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BsFillArrowLeftCircleFill } from 'react-icons/bs';
 import { GiEmptyWoodBucketHandle } from 'react-icons/gi';
+import { BiHide } from 'react-icons/bi';
 
 import './Recent.css';
 import { useStateContext } from '../../context/StateContext';
@@ -8,7 +9,7 @@ import { useStateContext } from '../../context/StateContext';
 
 
 const Recent = () => {
-  const { history } = useStateContext();
+  const { history, hide } = useStateContext();
   const [viewHistory, setViewHistory] = useState(false);
 
   return (
@@ -21,17 +22,18 @@ const Recent = () => {
         History
       </button>
       <div 
-        className={ viewHistory ? 'app__recent' : 'app__recent active' }
+        className={ viewHistory ? 'app__recent active' : 'app__recent' }
       >
         { history.length < 1 &&
           <div className='empty-recent'>
             <GiEmptyWoodBucketHandle fontSize={ 50 } />
-            <h3>There is no recent items</h3>
+            <h3>There is no <span>Recent</span> items</h3>
           </div>
         }
         {
           history.length >= 1 &&
           <div className='app__recent-container'>
+            <h2>Recent</h2>
             {
               history.map((h, i) => (
                 <div className='app__recent-item' key={ i }>
@@ -40,6 +42,11 @@ const Recent = () => {
                     <h4>{ h.title }</h4>
                     <p>{ h.description }</p>
                   </label>
+                  <button
+                    onClick={ () => hide(h) }
+                  >
+                    <BiHide className='hide-icon' fontSize={ 24 } />
+                  </button>
                 </div>
               ))
             }

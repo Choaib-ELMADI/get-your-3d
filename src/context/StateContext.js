@@ -41,6 +41,12 @@ export const StateContext = ({ children }) => {
         };
     };
 
+    const hide = (itm) => {
+        setHistory(
+            history.filter(h => h.title !== itm.title)
+        )
+    };
+
 
     return (
         <Context.Provider
@@ -53,6 +59,7 @@ export const StateContext = ({ children }) => {
                 setAtHome,
                 searching,
                 updateHistory,
+                hide,
             }}
         >
             { children }

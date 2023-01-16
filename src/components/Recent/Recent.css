@@ -1,10 +1,11 @@
 .app__recent {
     padding: .5rem;
-    width: 22%;
-    height: 60vh;
+    width: 25%;
+    max-height: 60vh;
     background: rgba(0, 0, 0, 0.9);
     max-width: 250px;
     min-width: 150px;
+    min-height: 400px;
     overflow-y: scroll;
     margin-right: 1rem;
     border-radius: 12px;
@@ -21,13 +22,26 @@
     color: var(--white);
 } 
 
+.empty-recent span {
+    color: orangered;
+}
+
+.app__recent-container * {
+    color: var(--white);
+}
+
 .app__recent-container {
     width: 100%;
     height: max-content;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: .5rem;
     padding: 0.25rem;
+}
+
+.app__recent-container h2 {
+    margin-bottom: .5rem;
+    color: orangered;
 }
 
 .app__recent h3 {
@@ -36,25 +50,43 @@
 }
 
 .app__recent-item {
-    overflow: hidden;
     width: 100%;
-    height: 40px;
     display: flex;
     align-items: center;
     gap: .5rem;
+    transition: .3s;
+    border-radius: 8px;
+    padding: .25rem .1rem;
+}
+
+.app__recent-item:hover {
+    background: gray;
 }
 
 .app__recent-item img {
     border-radius: 10px;
     height: 40px;
     height: 40px;
-    background: red;
+    background: var(--green__1);
+}
+
+.app__recent-item label {
+    width: auto;
+    overflow: hidden;
 }
 
 .app__recent-item p {
+    width: 100%;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+}
+
+.app__recent-item button {
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
 }
 
 @media screen and (width >= 720px) {
@@ -97,12 +129,11 @@
         display: flex;
         gap: 1rem;
         align-items: center;
-        background: var(--blury);
         z-index: 51;
+        background: var(--blury);
     }
     
     .recent-btn .icon {
-        color: var(--black);
         transition: 1s;
     }
 
