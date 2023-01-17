@@ -5,9 +5,10 @@
     gap: 2rem;
     width: 22%;
     max-width: max-content;
+    min-height: 400px;
     background: rgba(0, 0, 0, 0.9);
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 .app__navbar-section {
