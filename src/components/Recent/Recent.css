@@ -39,9 +39,29 @@
     padding: 0.25rem;
 }
 
-.app__recent-container h2 {
+.app__recent-container > h2 {
     margin-bottom: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.app__recent-container > h2 span {
     color: orangered;
+}
+
+.app__recent-container > h2 .hide-icon {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 6px;
+    transition: .2s;
+    padding: 0 .75rem;
+    cursor: pointer;
+}
+
+.app__recent-container > h2 .hide-icon:hover {
+    background: var(--black);
 }
 
 .app__recent h3 {
@@ -50,17 +70,18 @@
 }
 
 .app__recent-item {
+    text-decoration: none;
     width: 100%;
     display: flex;
     align-items: center;
     gap: .5rem;
-    transition: .3s;
-    border-radius: 8px;
-    padding: .25rem .1rem;
+    transition: .2s;
+    border-radius: 10px;
+    padding-right: .5rem;
 }
 
 .app__recent-item:hover {
-    background: gray;
+    background: var(--black);
 }
 
 .app__recent-item img {

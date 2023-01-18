@@ -7,7 +7,7 @@ const Context = createContext();
 
 export const StateContext = ({ children }) => {
     const [history, setHistory] = useState([]);
-    const [filteredItems, setFilteredItems] = useState([]);
+    const [filteredItems, setFilteredItems] = useState(models);
     const [atHome, setAtHome] = useState(true);
 
     const filtering = (section) => {
@@ -52,6 +52,7 @@ export const StateContext = ({ children }) => {
         <Context.Provider
             value= {{
                 history,
+                setHistory,
                 filtering,
                 filteredItems,
                 setFilteredItems,

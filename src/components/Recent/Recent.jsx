@@ -10,7 +10,7 @@ import { useStateContext } from '../../context/StateContext';
 
 
 const Recent = () => {
-  const { history, hide } = useStateContext();
+  const { history, setHistory, hide } = useStateContext();
   const [viewHistory, setViewHistory] = useState(false);
 
   return (
@@ -34,7 +34,15 @@ const Recent = () => {
         {
           history.length >= 1 &&
           <div className='app__recent-container'>
-            <h2>Recent</h2>
+            <h2>
+              <span>Recent</span>
+              <div 
+                onClick={ () => setHistory([]) }
+                className='hide-icon'
+              >
+                clear
+              </div>
+            </h2>
             {
               history.map((h, i) => (
                 <Link 
@@ -48,7 +56,7 @@ const Recent = () => {
                     <p>{ h.description }</p>
                   </label>
                   <button onClick={ () => hide(h) } >
-                    <BiHide className='hide-icon' fontSize={ 24 } />
+                    <BiHide className='hide-icon' fontSize={ 20 } />
                   </button>
                 </Link>
               ))
