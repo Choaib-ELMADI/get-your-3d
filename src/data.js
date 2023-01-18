@@ -6,7 +6,7 @@ export const models = [
         description : 'This is a description for the item 1',
         software    : 'Solidworks',
         pictures    : [images.solidworks, images.solidworks__1, images.solidworks__2, images.solidworks__3, images.solidworks__4],
-        testFile    : 'test.txt',
+        file        : 'test.txt',
     },
     {
         title       : 'Item-2',

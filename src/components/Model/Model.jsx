@@ -50,10 +50,6 @@ const Model = ({ model: { title, description, software, pictures, file } }) => {
           <AiFillStar fontSize={ 21 } />
         </div>
         <b className='bold'>{ software }</b>
-        <div className="app__model-file-info">
-          <p><b>Date</b> : 22/01/2023</p>
-          <p><b>Size</b> : 1.5Gb</p>
-        </div>
         <div className='app__model-btns'>
           <Link to='/sections/'><button><b>View More</b></button></Link>
           <button 
