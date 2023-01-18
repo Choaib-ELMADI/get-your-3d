@@ -55,5 +55,4 @@ export default {
     solidworks__4,
 
     not__found,
-
 }

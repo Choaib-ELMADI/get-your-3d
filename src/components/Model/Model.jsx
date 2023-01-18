@@ -6,9 +6,20 @@ import './Model.css';
 
 
 
-const Model = ({ model: { title, description, software, pictures } }) => {
+const Model = ({ model: { title, description, software, pictures, file } }) => {
   const [activeImage, setActiveImage] = useState(0);
 
+  const FILE_URL = `http://localhost:3000/models/${ file }`;
+
+  const handleDownload = (url) => {
+    const fileName = url.split('/').pop();
+    const aTag = document.createElement('a');
+    aTag.href = url;
+    aTag.setAttribute('download', fileName);
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  };
 
   return (
     <div className='app__model'>
@@ -46,7 +57,7 @@ const Model = ({ model: { title, description, software, pictures } }) => {
         <div className='app__model-btns'>
           <Link to='/sections/'><button><b>View More</b></button></Link>
           <button 
-            onClick={''} 
+            onClick={ () => handleDownload(FILE_URL) } 
           >
             <b>Download</b>
           </button>
