@@ -72,12 +72,15 @@ const SpecificSection = () => {
               key={ `model-${ i }` } 
               className='model__container'
             >
-              <img src={ model.pictures[0] } alt={ `model-${ i }` } />
-              <label>
-                <span>{ model.title }</span>
-                <Link to={ `/models/${ model.title }` } onClick={ () => updateHistory(model) } >Details</Link>
-              </label>
-              <p>{ model.description }</p>
+              <img src={ model.pictures[3] } alt={ `model-${ i }` } />
+              <h2>{ model.title }</h2>
+              <Link 
+                to={ `/models/${ model.title }` } 
+                onClick={ () => updateHistory(model) } 
+                className='view-link'
+              >
+                Details
+              </Link>
             </div>
           ))
         }
