@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { AiFillStar } from 'react-icons/ai';
 
 import './Model.css';
 
@@ -29,10 +30,19 @@ const Model = ({ model: { title, description, software, pictures } }) => {
       </div>
       <div className="app__model-info">
         <h1>{ title }</h1>
-        <div className='app__model-stars'>
-        </div>
         <p>{ description }</p>
+        <div className='app__model-stars'>
+          <AiFillStar fontSize={ 21 } />
+          <AiFillStar fontSize={ 21 } />
+          <AiFillStar fontSize={ 21 } />
+          <AiFillStar fontSize={ 21 } />
+          <AiFillStar fontSize={ 21 } />
+        </div>
         <b className='bold'>{ software }</b>
+        <div className="app__model-file-info">
+          <p><b>Date</b> : 22/01/2023</p>
+          <p><b>Size</b> : 1.5Gb</p>
+        </div>
         <div className='app__model-btns'>
           <Link to='/sections/'><button><b>View More</b></button></Link>
           <button 

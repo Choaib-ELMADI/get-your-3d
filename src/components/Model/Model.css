@@ -76,6 +76,8 @@
 }
 
 .app__model-btns {
+    margin-top: auto;
+    margin-bottom: 1.5rem;
     display: flex;
     gap: 1rem;
 }
@@ -96,6 +98,9 @@
     background: var(--soft__blue1);
 }
 
+.app__model-stars * {
+    fill: orange;
+}
 
 
 @media screen and (width <= 950px) {
@@ -115,11 +120,10 @@
     .app__model-pic {
         width: 100%;
     }
-}
 
-@media screen and (width <= 720px) {
-    .app__model {
-        transform: translateY(2rem);
+    .app__model-btns {
+        margin-top: 1.5rem;
+        margin-bottom: .5rem;
     }
 }
 
