@@ -62,7 +62,7 @@
     height: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem 1rem;
 }
 
 .model__container {
@@ -103,7 +103,7 @@
     transition: .2s;
 }
 
-.model__container .view-link:hover {
+.model__container:hover .view-link {
     background: var(--text__color);
     color: var(--background);
 }

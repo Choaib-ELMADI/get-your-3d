@@ -1,17 +1,10 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-// import { StlViewer } from "react-stl-viewer";
 
 import './Sections.css';
 import { Link } from 'react-router-dom';
 import { models } from '../../data';
 import { useStateContext } from '../../context/StateContext';
-{/* <StlViewer
-      className='main__model'
-      orbitControls
-      shadows
-      url={ models[0].file }
-/> */}
 
 
 const SpecificSection = () => {
