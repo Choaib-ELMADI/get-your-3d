@@ -86,18 +86,46 @@
 }
 
 .app__home-suggestion {
+    position: relative;
     width: 80px;
     height: 80px;
     background: var(--soft__blue1);
     overflow: hidden;
-    border-radius: 26px;
+    border-radius: 20px;
 }
 
 .app__home-suggestion img {
+    object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
+.app__home-suggestion .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    transition: .2s;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.app__home-suggestion:hover .overlay {
+    width: 100%;
+}
+
+.app__home-suggestion h5 {
+    color: var(--white);
+    font-size: 16px;
+    position: absolute;
+    bottom: 1rem;
+    left: -3.5rem;
+    transition: .1s;
+}
+
+.app__home-suggestion:hover h5 {
+    left: .5rem;
+}
 
 
 

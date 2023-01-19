@@ -30,7 +30,7 @@ const Home = () => {
         <div className="app__home-item">
           <img src={ images.home__i3 } alt="home-3" />
           <Link className='item__link'>
-            <h3>Something</h3>
+            <h3>Assemblies</h3>
           </Link>
         </div>
 
@@ -48,7 +48,8 @@ const Home = () => {
                   onClick={ () => updateHistory(elt) }
                 >
                   <div className='overlay' />
-                  <img src={ elt.pictures[0] } alt={ `suggestion-${ index }` } />
+                  <h5>{ elt.title }</h5>
+                  <img src={ elt.pictures[3] } alt={ `suggestion-${ index }` } />
                 </Link>
               ))
             }
