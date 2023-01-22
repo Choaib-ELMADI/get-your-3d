@@ -1,4 +1,4 @@
-<h1><a href='https://get-your-3d.netlify.app'>GetYour3D</a></h1>
+<h1><a href='https://get-your-3d.netlify.app' target='_blank'>GetYour3D</a></h1>
 <br>
 <h3>Features of the website</h3>
 <ul>
