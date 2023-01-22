@@ -47,9 +47,9 @@ export const StateContext = ({ children }) => {
         )
     };
 
-    const filterDrawings = () => {
+    const filterDrawings = (cat) => {
         setFilteredItems(models.filter(model => 
-            model.category !== 'part'
+            model.category === cat
         ));
     };
 

@@ -11,7 +11,15 @@ const Dr_Ass = () => {
 
     return (
         <div className='drawings-assemblies'>
-            <h1>Drawings <span style={{ color: 'orangered' }}>&</span> Assemblies</h1>
+            <h1>
+            {
+                filteredItems[0].category === 'drawing' ?
+                'Drawings' : 
+                (filteredItems[0].category === 'assembly' ? 
+                'Assemblies' : 
+                'Parts') 
+            }
+            </h1>
             {
                 filteredItems.map((f, i) => (
                     <Model key={ i } model={ f } />

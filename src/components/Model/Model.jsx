@@ -6,7 +6,7 @@ import './Model.css';
 
 
 
-const Model = ({ model: { title, description, software, pictures, file } }) => {
+const Model = ({ model: { title, description, software, pictures, file, category } }) => {
   const [activeImage, setActiveImage] = useState(0);
 
   const FILE_URL = `http://localhost:3000/models/${ file }`;
@@ -50,6 +50,7 @@ const Model = ({ model: { title, description, software, pictures, file } }) => {
           <AiFillStar fontSize={ 21 } />
         </div>
         <b className='bold'>{ software }</b>
+        <b className='bold' style={{ textTransform: 'capitalize' }}>{ category }</b>
         <div className='app__model-btns'>
           <Link to='/sections/'><button><b>View More</b></button></Link>
           <button 

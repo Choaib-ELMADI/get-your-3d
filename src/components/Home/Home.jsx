@@ -20,23 +20,27 @@ const Home = () => {
           <Link 
             to='drawings-assemblies' 
             className='item__link'
-            onClick={ () => filterDrawings() }
+            onClick={ () => filterDrawings('drawing') }
           >
             <h3>2D Drawings</h3>
           </Link>
         </div>
         <div className="app__home-item">
           <img src={ images.home__i2 } alt="home-2" />
-          <div className='item__link'>
+          <Link
+            to='drawings-assemblies' 
+            className='item__link'
+            onClick={ () => filterDrawings('part') }
+          >
             <h2>3D Modeling</h2>
-          </div>
+          </Link>
         </div>
         <div className="app__home-item">
           <img src={ images.home__i3 } alt="home-3" />
           <Link 
             to='drawings-assemblies'
             className='item__link'
-            onClick={ () => filterDrawings() }
+            onClick={ () => filterDrawings('assembly') }
           >
             <h3>Assemblies</h3>
           </Link>
