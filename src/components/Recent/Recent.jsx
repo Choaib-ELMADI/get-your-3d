@@ -55,7 +55,12 @@ const Recent = () => {
                     <h4>{ h.title }</h4>
                     <p>{ h.description }</p>
                   </label>
-                  <button onClick={ () => hide(h) } >
+                  <button 
+                    onClick={ (e) => {
+                      e.preventDefault();
+                      hide(h);
+                    }}
+                  >
                     <BiHide className='hide-icon' fontSize={ 20 } />
                   </button>
                 </Link>
