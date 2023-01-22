@@ -61,7 +61,7 @@ const Home = () => {
                 >
                   <div className='overlay' />
                   <h5>{ elt.title }</h5>
-                  <img src={ elt.pictures[3] } alt={ `suggestion-${ index }` } />
+                  <img src={ elt.pictures[2] } alt={ `suggestion-${ index }` } />
                 </Link>
               ))
             }
