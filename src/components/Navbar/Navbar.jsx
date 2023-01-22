@@ -20,7 +20,7 @@ const logos = [
 
 const Navbar = () => {
   const [viewPhoneBar, setViewPhoneBar] = useState(false);
-  const { filtering } = useStateContext();
+  const { filtering, activeSection, setActiveSection } = useStateContext();
 
   const handleClick = (section) => {
       filtering(section);
@@ -31,7 +31,8 @@ const Navbar = () => {
       <div className='app__navbar'>     
         <Link
           to="/"
-          className="app__navbar-section home-section"
+          className={ activeSection === -1 ? "app__navbar-section home-section active" : "app__navbar-section home-section" }
+          onClick={ () => setActiveSection(-1) }
         >
           <AiFillHome className='icon' />
           <h3>Home</h3>
@@ -41,8 +42,11 @@ const Navbar = () => {
             <Link 
               key={ section }
               to={ `/sections/` }
-              onClick={ () => handleClick(section) }
-              className="app__navbar-section"
+              onClick={ () => { 
+                setActiveSection(index);
+                handleClick(section);
+              }}
+              className={ activeSection === index ? "app__navbar-section active" : "app__navbar-section" }
             >
               <img src={ logos[index] } alt="logo" />
               <h4>{ section }</h4>
@@ -70,10 +74,11 @@ const Navbar = () => {
               key={ section }
               to='/Sections/'
               onClick={ () => {
-                handleClick(section)
+                setActiveSection(index);
+                handleClick(section);
                 setViewPhoneBar(false);
               }}
-              className="app__navbar-section"
+              className={ activeSection === index ? "app__navbar-section active" : "app__navbar-section" }
             >
               <img src={ logos[index] } alt="logo" />
               <h4>{ section }</h4>

@@ -7,6 +7,7 @@ const Context = createContext();
 
 export const StateContext = ({ children }) => {
     const [history, setHistory] = useState([]);
+    const [activeSection, setActiveSection] = useState(-1);
     const [filteredItems, setFilteredItems] = useState(models.filter(m => m.category === 'part'));
 
     const filtering = (section) => {
@@ -47,6 +48,8 @@ export const StateContext = ({ children }) => {
     return (
         <Context.Provider
             value= {{
+                activeSection,
+                setActiveSection,
                 history,
                 setHistory,
                 filtering,

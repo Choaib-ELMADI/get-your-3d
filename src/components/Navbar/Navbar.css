@@ -1,5 +1,6 @@
 .app__navbar {
     margin-left: .5rem;
+    padding-top: .65rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -18,6 +19,20 @@
     display: flex;
     gap: .75rem;
     align-items: center;
+    border-right: 3px solid transparent;
+    transition: hover .2s;
+}
+
+.app__navbar .app__navbar-section:hover :is(h3, h4) {
+    color: orangered;
+}
+
+.app__navbar .app__navbar-section.active {
+    border-right-color: orangered;
+}
+
+.app__navbar .app__navbar-section.active :is(h3, h4) {
+    color: orangered;
 }
 
 .app__navbar-section img {
@@ -106,6 +121,10 @@ body.dark .app__navbar-section .icon {
 
     .app__navbar-phone .app__navbar-section img {
         background: var(--green__1);
+    }
+
+    .app__navbar-phone .app__navbar-section.active h4 {
+        color: orangered;
     }
 }
 
