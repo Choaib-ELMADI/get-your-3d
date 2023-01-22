@@ -53,7 +53,6 @@ body.dark {
 
 .app__main-home {
     padding-top: 8rem;
-    position: relative;
     width: 100%;
     min-height: 100vh;
     display: flex;
