@@ -20,11 +20,10 @@ const logos = [
 
 const Navbar = () => {
   const [viewPhoneBar, setViewPhoneBar] = useState(false);
-  const { filtering, setAtHome } = useStateContext();
+  const { filtering } = useStateContext();
 
   const handleClick = (section) => {
       filtering(section);
-      setAtHome(false);
   };
 
   return (
@@ -32,9 +31,6 @@ const Navbar = () => {
       <div className='app__navbar'>     
         <Link
           to="/"
-          onClick={ () => {
-            setAtHome(true); 
-          }}
           className="app__navbar-section home-section"
         >
           <AiFillHome className='icon' />

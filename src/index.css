@@ -52,6 +52,7 @@ body.dark {
 }
 
 .app__main-home {
+    position: relative;
     padding-top: 8rem;
     width: 100%;
     min-height: 100vh;

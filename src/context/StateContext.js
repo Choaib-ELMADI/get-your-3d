@@ -8,21 +8,11 @@ const Context = createContext();
 export const StateContext = ({ children }) => {
     const [history, setHistory] = useState([]);
     const [filteredItems, setFilteredItems] = useState(models.filter(m => m.category === 'part'));
-    const [atHome, setAtHome] = useState(true);
 
     const filtering = (section) => {
         setFilteredItems(models.filter(model => 
             (model.software === section) && (model.category === 'part')
         ));
-    };
-
-    const searching = (items, query) => {
-        query = query.toLowerCase();
-        return items.filter(item =>
-          item.title.split(' ').some(word =>
-            word.toLowerCase().startsWith(query)
-          )
-        );
     };
 
     const updateHistory = (elt) => {
@@ -62,9 +52,6 @@ export const StateContext = ({ children }) => {
                 filtering,
                 filteredItems,
                 setFilteredItems,
-                atHome,
-                setAtHome,
-                searching,
                 updateHistory,
                 hide,
                 filterDrawings,
