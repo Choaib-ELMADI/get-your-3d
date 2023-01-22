@@ -1,0 +1,15 @@
+.drawings-assemblies {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.drawings-assemblies > h1 {
+    margin-bottom: 1rem; 
+}
+
+@media screen and (width >= 500px) {
+    .drawings-assemblies > h1 {
+        margin-left: 2rem;
+    }
+}

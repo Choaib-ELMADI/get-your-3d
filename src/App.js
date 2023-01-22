@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import { Header, Navbar, Home, SpecificSection, Recent, Footer, NotFound } from './components/index';
+import { Header, Navbar, Home, SpecificSection, Recent, Footer, NotFound, Dr_Ass } from './components/index';
 import { routes } from './paths';
 
 
@@ -26,6 +26,7 @@ const App = () => {
           <Route path="/" element={ <Home /> } />
           <Route path="/sections/" element={ <SpecificSection /> } />
           { routeElements }
+          <Route path="drawings-assemblies" element={ <Dr_Ass /> } />
           <Route path="*" element={ <NotFound /> } />
         </Routes>
         

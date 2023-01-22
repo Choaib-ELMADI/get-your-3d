@@ -14,3 +14,5 @@ export { default as Model           } from './Model/Model';
 export { default as Footer          } from './Footer/Footer';
 
 export { default as NotFound        } from './NotFound/NotFound';
+
+export { default as Dr_Ass          } from './Dr-As/Dr-Ass';

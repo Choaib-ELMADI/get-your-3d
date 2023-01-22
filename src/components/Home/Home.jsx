@@ -9,7 +9,7 @@ import { useStateContext } from '../../context/StateContext';
 
 
 const Home = () => {
-  const { updateHistory } = useStateContext();
+  const { updateHistory, filterDrawings } = useStateContext();
 
   return (
     <div className='app__home'>
@@ -17,19 +17,27 @@ const Home = () => {
 
         <div className="app__home-item">
           <img src={ images.home__i1 } alt="home-1" />
-          <Link className='item__link'>
+          <Link 
+            to='drawings-assemblies' 
+            className='item__link'
+            onClick={ () => filterDrawings() }
+          >
             <h3>2D Drawings</h3>
           </Link>
         </div>
         <div className="app__home-item">
           <img src={ images.home__i2 } alt="home-2" />
-          <Link className='item__link'>
+          <div className='item__link'>
             <h2>3D Modeling</h2>
-          </Link>
+          </div>
         </div>
         <div className="app__home-item">
           <img src={ images.home__i3 } alt="home-3" />
-          <Link className='item__link'>
+          <Link 
+            to='drawings-assemblies'
+            className='item__link'
+            onClick={ () => filterDrawings() }
+          >
             <h3>Assemblies</h3>
           </Link>
         </div>
@@ -40,7 +48,7 @@ const Home = () => {
         <div className="app__home-suggestions">
           <div className='app__home-container'>
             {
-              models.map((elt, index) => (
+              models.filter(m => m.category === 'part').map((elt, index) => (
                 <Link 
                   to={ `/models/${ elt.title }` } 
                   key={ `suggestion-${ index }` } 

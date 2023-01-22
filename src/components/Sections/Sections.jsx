@@ -29,7 +29,7 @@ const SpecificSection = () => {
             setAnimateCard([{ y: 100, opacity: 0 }]);
             setTimeout(() => {
               setAnimateCard([{ y: 0, opacity: 1 }]);
-              setFilteredItems(models);
+              setFilteredItems(models.filter(m => m.category === 'part'));
             }, 400);
           }}
         >See All</button>

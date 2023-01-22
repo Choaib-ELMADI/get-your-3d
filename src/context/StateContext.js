@@ -7,12 +7,12 @@ const Context = createContext();
 
 export const StateContext = ({ children }) => {
     const [history, setHistory] = useState([]);
-    const [filteredItems, setFilteredItems] = useState(models);
+    const [filteredItems, setFilteredItems] = useState(models.filter(m => m.category === 'part'));
     const [atHome, setAtHome] = useState(true);
 
     const filtering = (section) => {
         setFilteredItems(models.filter(model => 
-            model.software === section
+            (model.software === section) && (model.category === 'part')
         ));
     };
 
@@ -47,6 +47,12 @@ export const StateContext = ({ children }) => {
         )
     };
 
+    const filterDrawings = () => {
+        setFilteredItems(models.filter(model => 
+            model.category !== 'part'
+        ));
+    };
+
 
     return (
         <Context.Provider
@@ -61,6 +67,7 @@ export const StateContext = ({ children }) => {
                 searching,
                 updateHistory,
                 hide,
+                filterDrawings,
             }}
         >
             { children }
