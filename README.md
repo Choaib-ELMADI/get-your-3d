@@ -12,6 +12,7 @@
     <li>Showcase my skills</li>
     <li>Provide some help to others</li>
 </ul>
+<br>
 <h1>Large Devices :</h1>
 
 <img src="demos/desktop__1.png" width="500" /> <img src="demos/desktop__2.png" width="500" /> <img src="demos/desktop__3.png" width="500" /> <img src="demos/desktop__4.png" width="500" />
