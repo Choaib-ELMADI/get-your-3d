@@ -4,7 +4,7 @@ import { models } from './data';
 
 export const routes = [
     {
-      path: '/models/Item-1',
+      path: '/models/Head Piston',
       element: <Model model={ models[0] } />,
     }, 
     {
