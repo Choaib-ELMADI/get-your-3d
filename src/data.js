@@ -5,11 +5,11 @@ export const models = [
     /* Parts */
 
     {
-        title       : 'Item-1',
-        description : 'This is a description for the part 1',
+        title       : 'Head Piston',
+        description : 'The Head Piston of a single cylinder engine.',
         software    : 'Solidworks',
         pictures    : [images.solidworks__1, images.solidworks__2, images.solidworks__3, images.solidworks__4],
-        file        : 'test.txt',
+        file        : 'Head__Piston.SLDPRT',
         category    : 'part'
     },
     {
