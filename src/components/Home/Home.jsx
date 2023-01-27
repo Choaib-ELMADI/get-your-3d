@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './Home.css';
@@ -54,14 +54,14 @@ const Home = () => {
             {
               models.filter(m => m.category === 'part').map((elt, index) => (
                 <Link 
-                  to={ `/models/${ elt.title }` } 
+                  to={ `/models/${ elt.link }` } 
                   key={ `suggestion-${ index }` } 
                   className='app__home-suggestion'
                   onClick={ () => updateHistory(elt) }
                 >
                   <div className='overlay' />
                   <h5>{ elt.title }</h5>
-                  <img src={ elt.pictures[2] } alt={ `suggestion-${ index }` } />
+                  <img src={ elt.pictures[0] } alt={ `suggestion-${ index }` } />
                 </Link>
               ))
             }
