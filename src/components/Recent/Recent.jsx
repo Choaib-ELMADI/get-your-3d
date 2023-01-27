@@ -46,7 +46,7 @@ const Recent = () => {
             {
               history.map((h, i) => (
                 <Link 
-                  to={ `/models/${ h.title }` } 
+                  to={ `/models/${ h.link }` } 
                   className='app__recent-item' 
                   key={ i }
                 >
