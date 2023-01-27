@@ -16,7 +16,7 @@
 }
 
 .app__model-pic img {
-    background: var(--text__color);
+    /* background: var(--text__color); */
     width: 300px;
     aspect-ratio: 1;
     transition: .2s;
@@ -38,7 +38,7 @@
 }
 
 .app__model-small-pics img {
-    background: var(--text__color);
+    /* background: var(--text__color); */
     max-width: calc((300px/4) - 0.4rem);
     border: 1px solid transparent;
 }
