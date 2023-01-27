@@ -16,7 +16,7 @@
 }
 
 .app__model-pic img {
-    /* background: var(--text__color); */
+    background: rgb(36, 38, 44);
     width: 300px;
     aspect-ratio: 1;
     transition: .2s;
@@ -26,8 +26,7 @@
 }
 
 .app__model-pic > img:hover {
-    background: var(--violet);
-    border-color: var(--violet);
+    border-color: orangered;
 }
 
 .app__model-small-pics {
@@ -38,19 +37,16 @@
 }
 
 .app__model-small-pics img {
-    /* background: var(--text__color); */
     max-width: calc((300px/4) - 0.4rem);
-    border: 1px solid transparent;
+    border: 2px solid transparent;
 }
 
 .app__model-small-pics img:hover {
-    background: var(--violet);
-    border-color: var(--violet);
+    border-color: orangered;
 }
 
 .app__model-small-pics img.active {
-    background: var(--violet);
-    border-color: var(--violet);
+    border-color: orangered;
 }
 
 .app__model-info {
