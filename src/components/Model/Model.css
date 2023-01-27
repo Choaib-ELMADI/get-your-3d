@@ -16,7 +16,7 @@
 }
 
 .app__model-pic img {
-    background: rgb(36, 38, 44);
+    background: rgb(222,225,235);
     width: 300px;
     aspect-ratio: 1;
     transition: .2s;
