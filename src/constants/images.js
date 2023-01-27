@@ -31,6 +31,12 @@ import connectRod__2 from '../assets/connect__rod2.png';
 import connectRod__3 from '../assets/connect__rod3.png';
 import connectRod__4 from '../assets/connect__rod4.png';
 
+// Third Model
+import connectRodCover__1 from '../assets/connect__rodcover1.png';
+import connectRodCover__2 from '../assets/connect__rodcover2.png';
+import connectRodCover__3 from '../assets/connect__rodcover3.png';
+import connectRodCover__4 from '../assets/connect__rodcover4.png';
+
 import not__found    from '../assets/not__found.png';
 
 
@@ -65,6 +71,11 @@ export default {
     connectRod__2,
     connectRod__3,
     connectRod__4,
+
+    connectRodCover__1,
+    connectRodCover__2,
+    connectRodCover__3,
+    connectRodCover__4,
 
     not__found,
 }
