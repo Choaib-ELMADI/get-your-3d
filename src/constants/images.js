@@ -19,10 +19,17 @@ import catia__2     from '../assets/catia__2.png';
 import catia__3     from '../assets/catia__3.png';
 import catia__4     from '../assets/catia__4.png';
 
+// First Model
 import solidworks__1 from '../assets/solidworks__1.png';
 import solidworks__2 from '../assets/solidworks__2.png';
 import solidworks__3 from '../assets/solidworks__3.png';
 import solidworks__4 from '../assets/solidworks__4.png';
+
+// Second Model
+import connectRod__1 from '../assets/connect__rod1.png';
+import connectRod__2 from '../assets/connect__rod2.png';
+import connectRod__3 from '../assets/connect__rod3.png';
+import connectRod__4 from '../assets/connect__rod4.png';
 
 import not__found    from '../assets/not__found.png';
 
@@ -53,6 +60,11 @@ export default {
     solidworks__2,
     solidworks__3,
     solidworks__4,
+
+    connectRod__1,
+    connectRod__2,
+    connectRod__3,
+    connectRod__4,
 
     not__found,
 }

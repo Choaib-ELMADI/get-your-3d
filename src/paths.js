@@ -7,7 +7,7 @@ export const routes = [
     element: <Model model={models[0]} />,
   },
   {
-    path: '/models/item-2',
+    path: '/models/connect-rod',
     element: <Model model={models[1]} />,
   },
   {
