@@ -88,6 +88,7 @@
 
 .model__container h5 {
     color: var(--black);
+    font-size: 18px;
 }
 
 .model__container .view-link {
