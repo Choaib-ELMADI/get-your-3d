@@ -116,7 +116,7 @@
 
 .app__home-suggestion h5 {
     color: var(--white);
-    font-size: 16px;
+    font-size: 14px;
     position: absolute;
     bottom: 1rem;
     left: -5.5rem;

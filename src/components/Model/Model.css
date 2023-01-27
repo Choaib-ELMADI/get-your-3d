@@ -22,10 +22,12 @@
     transition: .2s;
     object-fit: cover;
     border-radius: 12px;
+    border: 2px solid transparent;
 }
 
 .app__model-pic > img:hover {
     background: var(--violet);
+    border-color: var(--violet);
 }
 
 .app__model-small-pics {
@@ -38,14 +40,17 @@
 .app__model-small-pics img {
     background: var(--text__color);
     max-width: calc((300px/4) - 0.4rem);
+    border: 1px solid transparent;
 }
 
 .app__model-small-pics img:hover {
     background: var(--violet);
+    border-color: var(--violet);
 }
 
 .app__model-small-pics img.active {
     background: var(--violet);
+    border-color: var(--violet);
 }
 
 .app__model-info {
