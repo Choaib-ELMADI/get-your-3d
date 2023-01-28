@@ -115,11 +115,13 @@
 }
 
 .app__home-suggestion h5 {
+    width: 100%;
+    max-width: 70px;
     color: var(--white);
     font-size: 14px;
     position: absolute;
     bottom: 1rem;
-    left: -5.5rem;
+    left: -100%;
     transition: .1s;
 }
 

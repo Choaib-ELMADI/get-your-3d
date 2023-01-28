@@ -89,7 +89,10 @@
 .model__container h5 {
     color: var(--black);
     width: 120px;
-    font-size: 21px;
+    font-size: 20px;
+    margin-top: .25rem;
+    margin-bottom: auto;
+    line-height: 20px;
 }
 
 .model__container .view-link {
