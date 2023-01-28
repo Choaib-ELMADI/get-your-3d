@@ -37,6 +37,12 @@ import connectRodCover__2 from '../assets/connect__rodcover2.png';
 import connectRodCover__3 from '../assets/connect__rodcover3.png';
 import connectRodCover__4 from '../assets/connect__rodcover4.png';
 
+// 4th Model
+import CrankShaft__1 from '../assets/CrankShaft__1.png';
+import CrankShaft__2 from '../assets/CrankShaft__2.png';
+import CrankShaft__3 from '../assets/CrankShaft__3.png';
+import CrankShaft__4 from '../assets/CrankShaft__4.png';
+
 import not__found    from '../assets/not__found.png';
 
 
