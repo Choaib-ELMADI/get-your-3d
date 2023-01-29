@@ -29,6 +29,7 @@
 
 .app__navbar .app__navbar-section.active {
     border-right-color: orangered;
+    background: rgba(255, 68, 0, 0.1);
 }
 
 .app__navbar .app__navbar-section.active :is(h3, h4) {
