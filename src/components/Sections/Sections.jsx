@@ -10,7 +10,7 @@ import { useStateContext } from '../../context/StateContext';
 const SpecificSection = () => {
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
-  const { filteredItems, filtering, setFilteredItems, updateHistory } = useStateContext();
+  const { filteredItems, filtering, setFilteredItems, updateHistory, setActiveSection } = useStateContext();
 
   const handleClicked = (x) => {
     setAnimateCard([{ y: 100, opacity: 0 }]);
@@ -36,16 +36,23 @@ const SpecificSection = () => {
       </div>
       <div className="app__specific-section-categories">
         { filteredItems.length < 1 &&
-          <h1>No Specific Items</h1>
+          <h1 style={{ marginTop: '2rem' }}>
+            <span style={{ color: 'orangered' }}>No </span>
+            specific items, See other 
+            <span style={{ color: 'orangered' }}> Softwares</span>
+          </h1>
         }
         { filteredItems.length >= 1 &&
           <div className='cat-container'>
             {
-            ["Solidworks", "Catia", "AutoCad", "Fusion"].map(cat => (
+            ["Solidworks", "Catia", "AutoCad", "Fusion"].map((cat, i) => (
               <button 
                 key={ cat }
                 className={ filteredItems[0].software === cat ? 'active' : '' }
-                onClick={ () => handleClicked(cat) }
+                onClick={ () => {
+                  setActiveSection(i);
+                  handleClicked(cat); 
+                }}
               >
                 { cat }
               </button>
