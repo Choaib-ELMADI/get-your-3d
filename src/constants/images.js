@@ -9,15 +9,6 @@ import solidworks from '../assets/solidworks__logo.png'
 import autocad from '../assets/autocad__logo.png'
 import fusion from '../assets/fusion__logo.png'
 
-import fusion__1 from '../assets/fusion__1.png'
-
-import autocad__1 from '../assets/autocad__1.png'
-import autocad__2 from '../assets/autocad__2.png'
-
-import catia__1 from '../assets/catia__1.png'
-import catia__2 from '../assets/catia__2.png'
-import catia__3 from '../assets/catia__3.png'
-import catia__4 from '../assets/catia__4.png'
 
 // First Model
 import solidworks__1 from '../assets/solidworks__1.png'
@@ -43,6 +34,25 @@ import CrankShaft__2 from '../assets/CrankShaft__2.png'
 import CrankShaft__3 from '../assets/CrankShaft__3.png'
 import CrankShaft__4 from '../assets/CrankShaft__4.png'
 
+// 5th Model
+import driving__gear1 from '../assets/driving__gear1.png'
+import driving__gear2 from '../assets/driving__gear2.png'
+import driving__gear3 from '../assets/driving__gear3.png'
+import driving__gear4 from '../assets/driving__gear4.png'
+
+// 6th Model
+import shaft__1 from '../assets/shaft__1.png'
+import shaft__2 from '../assets/shaft__2.png'
+import shaft__3 from '../assets/shaft__3.png'
+import shaft__4 from '../assets/shaft__4.png'
+
+// 7th Model
+import valve__1 from '../assets/valve__1.png'
+import valve__2 from '../assets/valve__2.png'
+import valve__3 from '../assets/valve__3.png'
+import valve__4 from '../assets/valve__4.png'
+
+
 import not__found from '../assets/not__found.png'
 
 export default {
@@ -56,16 +66,6 @@ export default {
   solidworks,
   autocad,
   fusion,
-
-  fusion__1,
-
-  autocad__1,
-  autocad__2,
-
-  catia__1,
-  catia__2,
-  catia__3,
-  catia__4,
 
   solidworks__1,
   solidworks__2,
@@ -86,6 +86,21 @@ export default {
   CrankShaft__2,
   CrankShaft__3,
   CrankShaft__4,
+
+  driving__gear1,
+  driving__gear2,
+  driving__gear3,
+  driving__gear4,
+
+  shaft__1,
+  shaft__2,
+  shaft__3,
+  shaft__4,
+
+  valve__1,
+  valve__2,
+  valve__3,
+  valve__4,
 
   not__found,
 }

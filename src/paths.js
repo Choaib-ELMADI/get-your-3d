@@ -19,19 +19,15 @@ export const routes = [
     element: <Model model={models[3]} />,
   },
   {
-    path: '/models/item-5',
+    path: '/models/driving-gear',
     element: <Model model={models[4]} />,
   },
   {
-    path: '/models/item-6',
+    path: '/models/shaft',
     element: <Model model={models[5]} />,
   },
   {
-    path: '/models/item-7',
+    path: '/models/valve',
     element: <Model model={models[6]} />,
-  },
-  {
-    path: '/models/item-8',
-    element: <Model model={models[7]} />,
   },
 ]
