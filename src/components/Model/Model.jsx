@@ -9,7 +9,7 @@ import './Model.css';
 const Model = ({ model: { title, description, software, pictures, file, category } }) => {
   const [activeImage, setActiveImage] = useState(0);
 
-  const FILE_URL = `https://get-your-3d.netlify.app/models/${ file }`;
+  const FILE_URL = `https://get-3d.netlify.app/models/${ file }`;
 
   const handleDownload = (url) => {
     const fileName = url.split('/').pop();
