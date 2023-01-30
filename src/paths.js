@@ -34,4 +34,12 @@ export const routes = [
     path: '/models/retainer',
     element: <Model model={models[7]} />,
   },
+  {
+    path: '/models/item-9',
+    element: <Model model={models[8]} />,
+  },
+  {
+    path: '/models/item-15',
+    element: <Model model={models[9]} />,
+  },
 ]

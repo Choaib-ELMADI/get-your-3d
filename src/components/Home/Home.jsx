@@ -52,7 +52,7 @@ const Home = () => {
         <div className="app__home-suggestions">
           <div className='app__home-container'>
             {
-              models.filter(m => m.category === 'part').map((elt, index) => (
+              models.slice(0, 10).map((elt, index) => (
                 <Link 
                   to={ `/models/${ elt.link }` } 
                   key={ `suggestion-${ index }` } 
