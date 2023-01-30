@@ -101,6 +101,20 @@ export const models = [
     category: 'part',
     link: 'valve',
   },
+  {
+    title: 'Engine Retainer',
+    description: 'A single cylinder engine retainer.',
+    software: 'Solidworks',
+    pictures: [
+      images.retainer__1,
+      images.retainer__2,
+      images.retainer__1,
+      images.retainer__2,
+    ],
+    file: 'Retainer.SLDPRT',
+    category: 'part',
+    link: 'retainer',
+  },
 
   /* Drawings */
 

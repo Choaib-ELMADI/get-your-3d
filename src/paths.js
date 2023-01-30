@@ -30,4 +30,8 @@ export const routes = [
     path: '/models/valve',
     element: <Model model={models[6]} />,
   },
+  {
+    path: '/models/retainer',
+    element: <Model model={models[7]} />,
+  },
 ]

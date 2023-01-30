@@ -52,6 +52,12 @@ import valve__2 from '../assets/valve__2.png'
 import valve__3 from '../assets/valve__3.png'
 import valve__4 from '../assets/valve__4.png'
 
+// 8th Model
+import retainer__1 from '../assets/retainer__1.png'
+import retainer__2 from '../assets/retainer__2.png'
+import retainer__3 from '../assets/retainer__3.png'
+import retainer__4 from '../assets/retainer__4.png'
+
 
 import not__found from '../assets/not__found.png'
 
@@ -101,6 +107,12 @@ export default {
   valve__2,
   valve__3,
   valve__4,
+
+  retainer__1,
+  retainer__2,
+  retainer__3,
+  retainer__4,
+
 
   not__found,
 }
