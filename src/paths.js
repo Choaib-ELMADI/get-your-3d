@@ -39,11 +39,15 @@ export const routes = [
     element: <Model model={models[8]} />,
   },
   {
-    path: '/models/item-9',
+    path: '/models/rocker-arm',
     element: <Model model={models[9]} />,
   },
   {
-    path: '/models/item-15',
+    path: '/models/item-9',
     element: <Model model={models[10]} />,
+  },
+  {
+    path: '/models/item-15',
+    element: <Model model={models[11]} />,
   },
 ]

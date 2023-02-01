@@ -64,6 +64,12 @@ import cam__shaft2 from '../assets/cam__shaft2.png'
 import cam__shaft3 from '../assets/cam__shaft3.png'
 import cam__shaft4 from '../assets/cam__shaft4.png'
 
+// 10th Model
+import rocker__arm1 from '../assets/rocker__arm1.png'
+import rocker__arm2 from '../assets/rocker__arm2.png'
+import rocker__arm3 from '../assets/rocker__arm3.png'
+import rocker__arm4 from '../assets/rocker__arm4.png'
+
 
 import not__found from '../assets/not__found.png'
 
@@ -123,6 +129,11 @@ export default {
   cam__shaft2,
   cam__shaft3,
   cam__shaft4,
+
+  rocker__arm1,
+  rocker__arm2,
+  rocker__arm3,
+  rocker__arm4,
 
   not__found,
 }

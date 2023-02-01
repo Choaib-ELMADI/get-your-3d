@@ -129,6 +129,20 @@ export const models = [
     category: 'part',
     link: 'cam-shaft',
   },
+  {
+    title: 'Rocker Arm',
+    description: 'A single cylinder engine rocker arm.',
+    software: 'Solidworks',
+    pictures: [
+      images.rocker__arm1,
+      images.rocker__arm2,
+      images.rocker__arm3,
+      images.rocker__arm4,
+    ],
+    file: 'Rocker__Arm.SLDPRT',
+    category: 'part',
+    link: 'rocker-arm',
+  },
 
   /* Drawings */
 
