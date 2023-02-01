@@ -77,6 +77,11 @@ import valve__assembly2 from '../assets/valve__assembly2.png'
 import valve__assembly3 from '../assets/valve__assembly3.png'
 import valve__assembly4 from '../assets/valve__assembly4.png'
 
+// Single Cylinder Engine
+import engine__1 from '../assets/single__cylinder__engine1.png'
+import engine__2 from '../assets/single__cylinder__engine2.png'
+import engine__3 from '../assets/single__cylinder__engine3.png'
+import engine__4 from '../assets/single__cylinder__engine4.png'
 
 import not__found from '../assets/not__found.png'
 
@@ -146,6 +151,11 @@ export default {
   valve__assembly2,
   valve__assembly3,
   valve__assembly4,
+
+  engine__1,
+  engine__2,
+  engine__3,
+  engine__4,
 
   not__found,
 }

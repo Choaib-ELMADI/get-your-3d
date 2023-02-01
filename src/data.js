@@ -146,20 +146,6 @@ export const models = [
 
   /* Drawings */
 
-  {
-    title: 'Item 9',
-    description: 'This is a description for the drawing 9 (fake)',
-    software: 'Solidworks',
-    pictures: [
-      images.solidworks__1,
-      images.solidworks__2,
-      images.solidworks__3,
-      images.solidworks__4,
-    ],
-    file: 'test.txt',
-    category: 'drawing',
-    link: 'item-9',
-  },
 
   /* Assemblies */
 
@@ -176,5 +162,19 @@ export const models = [
     file: 'Valve__Sub__Assembly.SLDASM',
     category: 'assembly',
     link: 'valve-assembly',
+  },
+  {
+    title: 'Single Cylinder Engine',
+    description: 'Single Cylinder Engine model. All the parts are available.',
+    software: 'Solidworks',
+    pictures: [
+      images.engine__1,
+      images.engine__2,
+      images.engine__3,
+      images.engine__4,
+    ],
+    file: 'Single__Cylinder__Engine.SLDASM',
+    category: 'assembly',
+    link: 'single-cylinder-engine',
   },
 ]

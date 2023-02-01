@@ -43,11 +43,11 @@ export const routes = [
     element: <Model model={models[9]} />,
   },
   {
-    path: '/models/item-9',
+    path: '/models/valve-assembly',
     element: <Model model={models[10]} />,
   },
   {
-    path: '/models/valve-assembly',
+    path: '/models/single-cylinder-engine',
     element: <Model model={models[11]} />,
   },
 ]
