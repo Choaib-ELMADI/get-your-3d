@@ -11,19 +11,31 @@ const Dr_Ass = () => {
 
     return (
         <div className='drawings-assemblies'>
-            <h1>
-            {
-                filteredItems[0].category === 'drawing' ?
-                'Drawings' : 
-                (filteredItems[0].category === 'assembly' ? 
-                'Assemblies' : 
-                'Parts') 
+            { 
+                filteredItems.length < 1 &&
+                <h1 style={{ marginTop: '2rem' }}>
+                    <span style={{ color: 'orangered' }}>No </span>
+                    specific items
+                </h1>
             }
-            </h1>
             {
-                filteredItems.map((f, i) => (
-                    <Model key={ i } model={ f } />
-                ))
+                filteredItems.length >= 1 &&
+                <>
+                    <h1>
+                    {
+                        filteredItems[0].category === 'drawing' ?
+                        'Drawings' : 
+                        (filteredItems[0].category === 'assembly' ? 
+                        'Assemblies' : 
+                        'Parts') 
+                    }
+                    </h1>
+                    {
+                        filteredItems.map((f, i) => (
+                            <Model key={ i } model={ f } />
+                        ))
+                    }
+                </>
             }
         </div>
     );
