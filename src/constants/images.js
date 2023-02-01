@@ -58,6 +58,12 @@ import retainer__2 from '../assets/retainer__2.png'
 import retainer__3 from '../assets/retainer__3.png'
 import retainer__4 from '../assets/retainer__4.png'
 
+// 9th Model
+import cam__shaft1 from '../assets/cam__shaft1.png'
+import cam__shaft2 from '../assets/cam__shaft2.png'
+import cam__shaft3 from '../assets/cam__shaft3.png'
+import cam__shaft4 from '../assets/cam__shaft4.png'
+
 
 import not__found from '../assets/not__found.png'
 
@@ -113,6 +119,10 @@ export default {
   retainer__3,
   retainer__4,
 
+  cam__shaft1,
+  cam__shaft2,
+  cam__shaft3,
+  cam__shaft4,
 
   not__found,
 }

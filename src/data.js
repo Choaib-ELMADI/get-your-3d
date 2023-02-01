@@ -115,6 +115,20 @@ export const models = [
     category: 'part',
     link: 'retainer',
   },
+  {
+    title: 'Cam Shaft',
+    description: 'A single cylinder engine cam shaft.',
+    software: 'Solidworks',
+    pictures: [
+      images.cam__shaft1,
+      images.cam__shaft2,
+      images.cam__shaft3,
+      images.cam__shaft4,
+    ],
+    file: 'Cam__Shaft.SLDPRT',
+    category: 'part',
+    link: 'cam-shaft',
+  },
 
   /* Drawings */
 

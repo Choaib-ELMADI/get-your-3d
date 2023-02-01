@@ -35,11 +35,15 @@ export const routes = [
     element: <Model model={models[7]} />,
   },
   {
-    path: '/models/item-9',
+    path: '/models/cam-shaft',
     element: <Model model={models[8]} />,
   },
   {
-    path: '/models/item-15',
+    path: '/models/item-9',
     element: <Model model={models[9]} />,
+  },
+  {
+    path: '/models/item-15',
+    element: <Model model={models[10]} />,
   },
 ]
