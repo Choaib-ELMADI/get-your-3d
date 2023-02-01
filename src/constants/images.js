@@ -71,6 +71,13 @@ import rocker__arm3 from '../assets/rocker__arm3.png'
 import rocker__arm4 from '../assets/rocker__arm4.png'
 
 
+// First Assembly
+import valve__assembly1 from '../assets/valve__assembly1.png'
+import valve__assembly2 from '../assets/valve__assembly2.png'
+import valve__assembly3 from '../assets/valve__assembly3.png'
+import valve__assembly4 from '../assets/valve__assembly4.png'
+
+
 import not__found from '../assets/not__found.png'
 
 export default {
@@ -134,6 +141,11 @@ export default {
   rocker__arm2,
   rocker__arm3,
   rocker__arm4,
+
+  valve__assembly1,
+  valve__assembly2,
+  valve__assembly3,
+  valve__assembly4,
 
   not__found,
 }

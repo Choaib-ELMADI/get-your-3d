@@ -164,17 +164,17 @@ export const models = [
   /* Assemblies */
 
   {
-    title: 'Item 15',
-    description: 'This is a description for the assembly 15 (fake)',
+    title: 'Valve Assembly',
+    description: 'This assembly consists of the valve part, the retainer and the valve spring retainer.',
     software: 'Solidworks',
     pictures: [
-      images.solidworks__1,
-      images.solidworks__2,
-      images.solidworks__3,
-      images.solidworks__4,
+      images.valve__assembly1,
+      images.valve__assembly2,
+      images.valve__assembly3,
+      images.valve__assembly4,
     ],
-    file: 'test.txt',
+    file: 'Valve__Sub__Assembly.SLDASM',
     category: 'assembly',
-    link: 'item-15',
+    link: 'valve-assembly',
   },
 ]
