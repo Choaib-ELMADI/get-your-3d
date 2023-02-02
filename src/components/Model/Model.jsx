@@ -40,7 +40,7 @@ const Model = ({ model: { title, description, software, pictures, file, category
         </div>
       </div>
       <div className="app__model-info">
-        <h1>{ title }</h1>
+        <h2>{ title }</h2>
         <p>{ description }</p>
         <div className='app__model-stars'>
           <AiFillStar fontSize={ 21 } />
