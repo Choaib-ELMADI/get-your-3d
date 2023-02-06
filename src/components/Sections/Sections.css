@@ -86,10 +86,9 @@
     background: var(--soft__blue2);
 }
 
-.model__container h5 {
-    color: var(--black);
+.model__container h4 {
+    color: var(--text__color);
     width: 120px;
-    font-size: 20px;
     margin-top: .25rem;
     margin-bottom: auto;
     line-height: 20px;
@@ -103,7 +102,6 @@
     border: 1px solid var(--text__color);
     width: max-content;
     border-radius: 8px;
-    font-size: 16px;
     font-weight: 600;
     transition: .2s;
 }

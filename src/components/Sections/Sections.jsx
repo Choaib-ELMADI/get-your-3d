@@ -75,7 +75,7 @@ const SpecificSection = () => {
                 className='model__container'
               >
                 <img src={ model.pictures[0] } alt={ `model-${ i }` } />
-                <h5>{ model.title }</h5>
+                <h4>{ model.title }</h4>
                 <Link 
                   to={ `/models/${ model.link }` } 
                   onClick={ () => updateHistory(model) } 
