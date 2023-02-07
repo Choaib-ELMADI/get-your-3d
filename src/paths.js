@@ -50,4 +50,8 @@ export const routes = [
     path: '/models/single-cylinder-engine',
     element: <Model model={models[11]} />,
   },
+  {
+    path: '/models/robotic-gripper',
+    element: <Model model={models[12]} />,
+  },
 ]

@@ -177,4 +177,18 @@ export const models = [
     category: 'assembly',
     link: 'single-cylinder-engine',
   },
+  {
+    title: 'Robotic Gripper',
+    description: 'Robotic Gripper model for arduino and small projects.',
+    software: 'Solidworks',
+    pictures: [
+      images.gripper__2,
+      images.gripper__3,
+      images.gripper__4,
+      images.gripper__1,
+    ],
+    file: 'Robotic__Gripper.SLDASM',
+    category: 'assembly',
+    link: 'robotic-gripper',
+  },
 ]

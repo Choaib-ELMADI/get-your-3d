@@ -83,6 +83,12 @@ import engine__2 from '../assets/single__cylinder__engine2.png'
 import engine__3 from '../assets/single__cylinder__engine3.png'
 import engine__4 from '../assets/single__cylinder__engine4.png'
 
+// Robotic Gripper
+import gripper__1 from '../assets/gripper__1.png'
+import gripper__2 from '../assets/gripper__2.png'
+import gripper__3 from '../assets/gripper__3.png'
+import gripper__4 from '../assets/gripper__4.png'
+
 import not__found from '../assets/not__found.png'
 
 export default {
@@ -156,6 +162,11 @@ export default {
   engine__2,
   engine__3,
   engine__4,
+
+  gripper__1,
+  gripper__2,
+  gripper__3,
+  gripper__4,
 
   not__found,
 }
