@@ -6,7 +6,7 @@ import './Model.css';
 
 
 
-const Model = ({ model: { title, description, software, pictures, file, category } }) => {
+const Model = ({ model: { title, description, software, pictures, file, category, date } }) => {
   const [activeImage, setActiveImage] = useState(0);
 
   const FILE_URL = `https://get-3d.netlify.app/models/${ file }`;
@@ -51,6 +51,7 @@ const Model = ({ model: { title, description, software, pictures, file, category
         </div>
         <b className='bold'>{ software }</b>
         <b className='bold' style={{ textTransform: 'capitalize' }}>{ category }</b>
+        <b>Date : { date }</b>
         <div className='app__model-btns'>
           <Link to='/sections/'><button><b>View More</b></button></Link>
           <button 

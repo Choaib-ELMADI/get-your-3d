@@ -16,6 +16,7 @@ export const models = [
     file: 'Head__Piston.SLDPRT',
     category: 'part',
     link: 'head-piston',
+    date: '23/01/2023'
   },
   {
     title: 'Connect Rod',
@@ -30,6 +31,7 @@ export const models = [
     file: 'Connecting__Rod.SLDPRT',
     category: 'part',
     link: 'connect-rod',
+    date: '23/01/2023'
   },
   {
     title: 'Connect Rod Cover',
@@ -44,6 +46,7 @@ export const models = [
     file: 'Connecting__RodCover.SLDPRT',
     category: 'part',
     link: 'connect-rod-cover',
+    date: '23/01/2023'
   },
   {
     title: 'Crank Shaft',
@@ -58,6 +61,7 @@ export const models = [
     file: 'Crankshaft.SLDPRT',
     category: 'part',
     link: 'crank-shaft',
+    date: '23/01/2023'
   },
   {
     title: 'Driving Gear',
@@ -72,6 +76,7 @@ export const models = [
     file: 'Driving__Gear.SLDPRT',
     category: 'part',
     link: 'driving-gear',
+    date: '23/01/2023'
   },
   {
     title: 'Shaft',
@@ -86,6 +91,7 @@ export const models = [
     file: 'Shaft.SLDPRT',
     category: 'part',
     link: 'shaft',
+    date: '23/01/2023'
   },
   {
     title: 'Engine Valve',
@@ -100,6 +106,7 @@ export const models = [
     file: 'Valve.SLDPRT',
     category: 'part',
     link: 'valve',
+    date: '23/01/2023'
   },
   {
     title: 'Engine Retainer',
@@ -114,6 +121,7 @@ export const models = [
     file: 'Retainer.SLDPRT',
     category: 'part',
     link: 'retainer',
+    date: '23/01/2023'
   },
   {
     title: 'Cam Shaft',
@@ -128,6 +136,7 @@ export const models = [
     file: 'Cam__Shaft.SLDPRT',
     category: 'part',
     link: 'cam-shaft',
+    date: '23/01/2023'
   },
   {
     title: 'Rocker Arm',
@@ -142,6 +151,7 @@ export const models = [
     file: 'Rocker__Arm.SLDPRT',
     category: 'part',
     link: 'rocker-arm',
+    date: '23/01/2023'
   },
 
   /* Drawings */
@@ -162,6 +172,7 @@ export const models = [
     file: 'Valve__Sub__Assembly.SLDASM',
     category: 'assembly',
     link: 'valve-assembly',
+    date: '24/01/2023'
   },
   {
     title: 'Single Cylinder Engine',
@@ -176,6 +187,7 @@ export const models = [
     file: 'Single__Cylinder__Engine.SLDASM',
     category: 'assembly',
     link: 'single-cylinder-engine',
+    date: '01/02/2023'
   },
   {
     title: 'Robotic Gripper',
@@ -190,5 +202,6 @@ export const models = [
     file: 'Robotic__Gripper.SLDASM',
     category: 'assembly',
     link: 'robotic-gripper',
+    date: '07/02/2023'
   },
 ]
