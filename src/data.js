@@ -204,4 +204,19 @@ export const models = [
     link: 'robotic-gripper',
     date: '07/02/2023'
   },
+  {
+    title: 'Manual Clamp',
+    description: 'Manual Clamp (-mechanical mechanism-)',
+    software: 'Solidworks',
+    pictures: [
+      images.manual__clamp1,
+      images.manual__clamp2,
+      images.manual__clamp3,
+      images.manual__clamp4,
+    ],
+    file: 'Manual__Clamp.SLDASM',
+    category: 'assembly',
+    link: 'manual-clamp',
+    date: '09/02/2023'
+  },
 ]

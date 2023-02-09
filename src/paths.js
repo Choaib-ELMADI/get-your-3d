@@ -54,4 +54,9 @@ export const routes = [
     path: '/models/robotic-gripper',
     element: <Model model={models[12]} />,
   },
+  {
+    path: '/models/manual-clamp',
+    element: <Model model={models[13]} />,
+  },
+  
 ]
