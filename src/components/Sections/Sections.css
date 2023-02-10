@@ -68,7 +68,7 @@
 .model__container {
     padding: .5rem;
     border-radius: 15px;
-    background: var(--violet);
+    background-image: linear-gradient(-45deg, var(--soft__blue1), var(--soft__blue2));
     display: flex;
     flex-direction: column;
 }
