@@ -96,10 +96,10 @@ import manual__clamp3 from '../assets/manual__clamp3.jpg'
 import manual__clamp4 from '../assets/manual__clamp4.jpg'
 
 // Opposed Engine
-import opposed__engine1 from '../assets/opposed__engine1.jpg'
-import opposed__engine2 from '../assets/opposed__engine2.jpg'
-import opposed__engine3 from '../assets/opposed__engine3.jpg'
-import opposed__engine4 from '../assets/opposed__engine4.jpg'
+import opposed__engine1 from '../assets/opposed__engine1.png'
+import opposed__engine2 from '../assets/opposed__engine2.png'
+import opposed__engine3 from '../assets/opposed__engine3.png'
+import opposed__engine4 from '../assets/opposed__engine4.png'
 
 import not__found from '../assets/not__found.png'
 
