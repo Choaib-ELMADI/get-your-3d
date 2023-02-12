@@ -219,4 +219,19 @@ export const models = [
     link: 'manual-clamp',
     date: '09/02/2023'
   },
+  {
+    title: 'Opposed Piston',
+    description: 'Dual opposed piston engine (-mechanical mechanism-)',
+    software: 'Solidworks',
+    pictures: [
+      images.opposed__engine1,
+      images.opposed__engine2,
+      images.opposed__engine3,
+      images.opposed__engine4,
+    ],
+    file: 'Opposed__Motor__Engine.SLDASM',
+    category: 'assembly',
+    link: 'opposed-piston',
+    date: '12/02/2023'
+  },
 ]

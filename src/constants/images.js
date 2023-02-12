@@ -95,6 +95,12 @@ import manual__clamp2 from '../assets/manual__clamp2.jpg'
 import manual__clamp3 from '../assets/manual__clamp3.jpg'
 import manual__clamp4 from '../assets/manual__clamp4.jpg'
 
+// Opposed Engine
+import opposed__engine1 from '../assets/opposed__engine1.jpg'
+import opposed__engine2 from '../assets/opposed__engine2.jpg'
+import opposed__engine3 from '../assets/opposed__engine3.jpg'
+import opposed__engine4 from '../assets/opposed__engine4.jpg'
+
 import not__found from '../assets/not__found.png'
 
 export default {
@@ -178,6 +184,11 @@ export default {
   manual__clamp2,
   manual__clamp3,
   manual__clamp4,
+
+  opposed__engine1,
+  opposed__engine2,
+  opposed__engine3,
+  opposed__engine4,
 
   not__found,
 }

@@ -58,5 +58,8 @@ export const routes = [
     path: '/models/manual-clamp',
     element: <Model model={models[13]} />,
   },
-  
+  {
+    path: '/models/opposed-piston',
+    element: <Model model={models[14]} />,
+  },  
 ]
