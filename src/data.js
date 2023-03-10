@@ -234,4 +234,19 @@ export const models = [
     link: 'opposed-piston',
     date: '12/02/2023'
   },
+  {
+    title: 'Micro Servo SG90',
+    description: 'Tower Pro Micro Servo 9g SG90',
+    software: 'Solidworks',
+    pictures: [
+      images.micro__servo1,
+      images.micro__servo2,
+      images.micro__servo3,
+      images.micro__servo4,
+    ],
+    file: 'Micro__Servo__SG90.SLDASM',
+    category: 'assembly',
+    link: 'micro-servo-sg90',
+    date: '10/03/2023'
+  },
 ]

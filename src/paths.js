@@ -61,5 +61,9 @@ export const routes = [
   {
     path: '/models/opposed-piston',
     element: <Model model={models[14]} />,
-  },  
+  }, 
+  {
+    path: '/models/micro-servo-sg90',
+    element: <Model model={models[15]} />,
+  }, 
 ]

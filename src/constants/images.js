@@ -101,6 +101,12 @@ import opposed__engine2 from '../assets/opposed__engine2.png'
 import opposed__engine3 from '../assets/opposed__engine3.png'
 import opposed__engine4 from '../assets/opposed__engine4.png'
 
+// Micro Servo SG90
+import micro__servo1 from '../assets/micro__servo-1.png'
+import micro__servo2 from '../assets/micro__servo-2.png'
+import micro__servo3 from '../assets/micro__servo-3.png'
+import micro__servo4 from '../assets/micro__servo-4.png'
+
 import not__found from '../assets/not__found.png'
 
 export default {
@@ -189,6 +195,11 @@ export default {
   opposed__engine2,
   opposed__engine3,
   opposed__engine4,
+
+  micro__servo1,
+  micro__servo2,
+  micro__servo3,
+  micro__servo4,
 
   not__found,
 }
