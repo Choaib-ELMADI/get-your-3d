@@ -107,6 +107,12 @@ import micro__servo2 from '../assets/micro__servo-2.png'
 import micro__servo3 from '../assets/micro__servo-3.png'
 import micro__servo4 from '../assets/micro__servo-4.png'
 
+// Solar Light Detector
+import solar__panel1 from '../assets/solar__panel-1.png'
+import solar__panel2 from '../assets/solar__panel-2.png'
+import solar__panel3 from '../assets/solar__panel-3.png'
+import solar__panel4 from '../assets/solar__panel-4.png'
+
 import not__found from '../assets/not__found.png'
 
 export default {
@@ -200,6 +206,11 @@ export default {
   micro__servo2,
   micro__servo3,
   micro__servo4,
+
+  solar__panel1,
+  solar__panel2,
+  solar__panel3,
+  solar__panel4,
 
   not__found,
 }

@@ -249,4 +249,19 @@ export const models = [
     link: 'micro-servo-sg90',
     date: '10/03/2023'
   },
+  {
+    title: 'Solar Light Detector',
+    description: 'Solar light follower using Micro Servo 9g SG90',
+    software: 'Solidworks',
+    pictures: [
+      images.solar__panel1,
+      images.solar__panel2,
+      images.solar__panel3,
+      images.solar__panel4,
+    ],
+    file: 'Solar__Light__Detector.SLDASM',
+    category: 'assembly',
+    link: 'solar-light-follower',
+    date: '10/03/2023'
+  },
 ]

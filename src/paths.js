@@ -66,4 +66,8 @@ export const routes = [
     path: '/models/micro-servo-sg90',
     element: <Model model={models[15]} />,
   }, 
+  {
+    path: '/models/solar-light-follower',
+    element: <Model model={models[16]} />,
+  },
 ]
