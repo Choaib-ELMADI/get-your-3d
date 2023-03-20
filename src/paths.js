@@ -70,4 +70,8 @@ export const routes = [
     path: '/models/solar-light-follower',
     element: <Model model={models[16]} />,
   },
+  {
+    path: '/models/yellow-gearbox-motor',
+    element: <Model model={models[17]} />,
+  },
 ]

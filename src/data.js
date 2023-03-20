@@ -264,4 +264,19 @@ export const models = [
     link: 'solar-light-follower',
     date: '10/03/2023'
   },
+  {
+    title: 'Yellow Gearbox Motor',
+    description: 'Arduino gearbox motor CC',
+    software: 'Solidworks',
+    pictures: [
+      images.yellow__gearbox1,
+      images.yellow__gearbox2,
+      images.yellow__gearbox3,
+      images.yellow__gearbox4,
+    ],
+    file: 'Yellow__Gearbox__Motor.SLDASM',
+    category: 'assembly',
+    link: 'yellow-gearbox-motor',
+    date: '20/03/2023'
+  },
 ]

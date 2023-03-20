@@ -113,6 +113,12 @@ import solar__panel2 from '../assets/solar__panel-2.png'
 import solar__panel3 from '../assets/solar__panel-3.png'
 import solar__panel4 from '../assets/solar__panel-4.png'
 
+// Yellow Gearbox Motor
+import yellow__gearbox1 from '../assets/yellow__gearbox-1.png'
+import yellow__gearbox2 from '../assets/yellow__gearbox-2.png'
+import yellow__gearbox3 from '../assets/yellow__gearbox-3.png'
+import yellow__gearbox4 from '../assets/yellow__gearbox-4.png'
+
 import not__found from '../assets/not__found.png'
 
 export default {
@@ -211,6 +217,11 @@ export default {
   solar__panel2,
   solar__panel3,
   solar__panel4,
+
+  yellow__gearbox1,
+  yellow__gearbox2,
+  yellow__gearbox3,
+  yellow__gearbox4,
 
   not__found,
 }
