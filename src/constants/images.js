@@ -121,7 +121,7 @@ import yellow__gearbox4 from '../assets/yellow__gearbox-4.png'
 
 import not__found from '../assets/not__found.png'
 
-export default {
+const images = {
   logo__dark,
 
   home__i1,
@@ -225,3 +225,5 @@ export default {
 
   not__found,
 }
+
+export default images;
